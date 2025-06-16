@@ -70,7 +70,7 @@ Visualtzation files are added for a better understanding of the data.
 
 ## Notes
 
-The model calculates the TCO for the time horizon of the optimization.
+The model calculates the Total Cost of Ownership (TCO) for the time horizon of the optimization.
 
 ## Technical Implementation
 
