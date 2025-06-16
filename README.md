@@ -4,7 +4,7 @@ This repository contains optimization data generated as part of the EU ESCALATE 
 
 ## Overview
 
-The ESCALATE project developed an advanced fleet operation optimization tool that enables fleet operators to efficiently integrate zero emission vehicles into their operations. This tool uses innovative AI methodologies combined with high-detail simulation models to optimize vehicle routing while considering energetic constraints, charging requirements, and hydrogen refueling needs.
+The ESCALATE project developed an advanced fleet operation optimization tool that enables fleet operators to efficiently integrate zero emission vehicles into their operations. This tool uses innovative AI methodologies combined with high-detail simulation models to optimize the fleet operation for all vehicles (routing, charging strategy and hydrogen refueling strategy) while considering energetic constraints, charging requirements, and hydrogen refueling needs.
 
 ## Repository Contents
 
