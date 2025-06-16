@@ -53,24 +53,12 @@ Optimization results contain:
   - Charging/refueling stops
   - Driver rest periods
 
+The model calculates the Total Cost of Ownership (TCO) for the time horizon of the optimization.
 
 ### Visualization
 Visualtzation files are added for a better understanding of the data.
 - **`fleet_operation_map.html`** - Top-down view of optimized tours of all vehicles on a map
 - **`vehicle_charts.html`** - Plots of energy (fuel, electric SoC, hydrogen SoC) and payloads (mass, volume) for all used vehicles along their trip. The vertical line at the end of eSoC and hSoC plots indicate charging and refueling at the depot, which can be done slow or fast before the next use of the vehicle.
-
-## Key Metrics Comparison
-
-| Metric | ICEV Fleet | Mixed Fleet | Change |
-|--------|------------|-------------|-------------|
-| Total Cost | €8,654.55 | €9,306.46 | +7.5% |
-| Total Distance | 7,991,963 m | 8,237,065 m | +3.1% |
-| CO2 Cost | €523.91 | €185.43 | 64.6% reduction |
-| Energy Cost | €2,891.77 | €3,125.22 | +8.1% |
-
-## Notes
-
-The model calculates the Total Cost of Ownership (TCO) for the time horizon of the optimization.
 
 ## Technical Implementation
 
