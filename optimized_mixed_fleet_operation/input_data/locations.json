@@ -1,0 +1,62 @@
+[
+  {
+    "search_string": "Junginger Str. 15, 89081 Ulm",
+    "type": "depot",
+    "max_charging_power": 0.0,
+    "overnightable": 1
+  },
+  {
+    "search_string": "Chem. de Riantbosson 15-21, 1217 Meyrin, Schweiz",
+    "type": "charging_station",
+    "max_charging_power": 400000,
+    "overnightable": 0
+  },
+  {
+    "search_string": "Echangeur Valence Nord, 26500 Bourg-lès-Valence, France",
+    "type": "charging_station",
+    "max_charging_power": 400000,
+    "overnightable": 0
+  },
+  {
+    "search_string": "Menzinger Str. 85, 80992 München",
+    "type": "charging_station",
+    "max_charging_power": 400000,
+    "overnightable": 0
+  },
+  {
+    "search_string": "Großer Marktweg 10, 04178 Leipzig",
+    "type": "charging_station",
+    "max_charging_power": 400000,
+    "overnightable": 0
+  },
+  {
+    "search_string": "Alte Heerstraße 2, 28259 Bremen",
+    "type": "charging_station",
+    "max_charging_power": 400000,
+    "overnightable": 0
+  },
+  {
+    "search_string": "Stauffenbergstraße 29, 73730 Esslingen am Neckar",
+    "type": "charging_station",
+    "max_charging_power": 400000,
+    "overnightable": 0
+  },
+  {
+    "search_string": "Polígono Industrial Can Salvatella, Avinguda Salvatella, 113, 08210 Barberà del Vallès, Barcelona, Spanien",
+    "type": "charging_station",
+    "max_charging_power": 400000,
+    "overnightable": 0
+  },
+  {
+    "search_string": "11 Rue René Cassin, 38120 Saint-Égrève, Frankreich",
+    "type": "hydrogen_refueling_station",
+    "max_charging_power": 0.0,
+    "overnightable": 0
+  },
+  {
+    "search_string": "Donauwörther Str. 293, 86154 Augsburg",
+    "type": "hydrogen_refueling_station",
+    "max_charging_power": 0.0,
+    "overnightable": 0
+  }
+]

@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Solution Dashboard</title>
+    <!-- Load Chart.js (CDN) & date-fns adapter for time axis -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+
+    <style>
+        /* Dark mode styling for the overall page */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e1e;
+            color: #f3f3f3;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+                        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        }
+        h1, h2, h3 {
+            margin: 1rem 2rem;
+            cursor: pointer;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        
+        /* Panel for each vehicle */
+        .vehicle-panel {
+            background-color: #2a2a2a;
+            border-radius: 30px;
+            margin: 1.5rem 0;
+            padding: 1rem;
+        }
+
+        /* Collapsible content for vehicles and charts */
+        .collapsible-content {
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        /* Chart container:
+           - position relative so the canvas can fill it
+           - increased height for better readability */
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 1600px; /* optional max width */
+            margin: 1rem auto;
+            height: 500px;     /* bigger chart height */
+        }
+        
+        canvas {
+            background-color: #2c2c2c;
+            border-radius: 8px;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 1rem;
+            color: #888;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 onclick="toggleSection('all-vehicles')">Vehicle Tours Dashboard</h1>
+        <div id="all-vehicles" class="collapsible-content">
+
+
+        <!-- Vehicle Panel -->
+        <div class="vehicle-panel">
+            <h2 onclick="toggleSection('vehicle_101')">Vehicle 101</h2>
+            <div id="vehicle_101" class="collapsible-content">
+                <!-- eSoC Chart -->
+                <h3 onclick="toggleSection('chart_esoc_101_container')">eSoC Over Time</h3>
+                <div id="chart_esoc_101_container" class="collapsible-content">
+                    <div class="chart-container">
+                        <canvas id="chart_esoc_101"></canvas>
+                    </div>
+                </div>
+
+                <!-- hSoC Chart -->
+                <h3 onclick="toggleSection('chart_hsoc_101_container')">hSoC Over Time</h3>
+                <div id="chart_hsoc_101_container" class="collapsible-content">
+                    <div class="chart-container">
+                        <canvas id="chart_hsoc_101"></canvas>
+                    </div>
+                </div>
+
+                <!-- Fuel Chart -->
+                <h3 onclick="toggleSection('chart_fuel_101_container')">Cumulative Fuel Over Time</h3>
+                <div id="chart_fuel_101_container" class="collapsible-content">
+                    <div class="chart-container">
+                        <canvas id="chart_fuel_101"></canvas>
+                    </div>
+                </div>
+
+                <!-- Load Weight Chart -->
+                <h3 onclick="toggleSection('chart_weight_101_container')">Load Weight Over Time</h3>
+                <div id="chart_weight_101_container" class="collapsible-content">
+                    <div class="chart-container">
+                        <canvas id="chart_weight_101"></canvas>
+                    </div>
+                </div>
+
+                <!-- Load Volume Chart -->
+                <h3 onclick="toggleSection('chart_volume_101_container')">Load Volume Over Time</h3>
+                <div id="chart_volume_101_container" class="collapsible-content">
+                    <div class="chart-container">
+                        <canvas id="chart_volume_101"></canvas>
+                    </div>
+                </div>
+            </div> <!-- End vehicle_101 collapsible -->
+        </div> <!-- End .vehicle-panel -->
+        
+
+        <!-- Vehicle Panel -->
+        <div class="vehicle-panel">
+            <h2 onclick="toggleSection('vehicle_201')">Vehicle 201</h2>
+            <div id="vehicle_201" class="collapsible-content">
+                <!-- eSoC Chart -->
+                <h3 onclick="toggleSection('chart_esoc_201_container')">eSoC Over Time</h3>
+                <div id="chart_esoc_201_container" class="collapsible-content">
+                    <div class="chart-container">
+                        <canvas id="chart_esoc_201"></canvas>
+                    </div>
+                </div>
+
+                <!-- hSoC Chart -->
+                <h3 onclick="toggleSection('chart_hsoc_201_container')">hSoC Over Time</h3>
+                <div id="chart_hsoc_201_container" class="collapsible-content">
+                    <div class="chart-container">
+                        <canvas id="chart_hsoc_201"></canvas>
+                    </div>
+                </div>
+
+                <!-- Fuel Chart -->
+                <h3 onclick="toggleSection('chart_fuel_201_container')">Cumulative Fuel Over Time</h3>
+                <div id="chart_fuel_201_container" class="collapsible-content">
+                    <div class="chart-container">
+                        <canvas id="chart_fuel_201"></canvas>
+                    </div>
+                </div>
+
+                <!-- Load Weight Chart -->
+                <h3 onclick="toggleSection('chart_weight_201_container')">Load Weight Over Time</h3>
+                <div id="chart_weight_201_container" class="collapsible-content">
+                    <div class="chart-container">
+                        <canvas id="chart_weight_201"></canvas>
+                    </div>
+                </div>
+
+                <!-- Load Volume Chart -->
+                <h3 onclick="toggleSection('chart_volume_201_container')">Load Volume Over Time</h3>
+                <div id="chart_volume_201_container" class="collapsible-content">
+                    <div class="chart-container">
+                        <canvas id="chart_volume_201"></canvas>
+                    </div>
+                </div>
+            </div> <!-- End vehicle_201 collapsible -->
+        </div> <!-- End .vehicle-panel -->
+        
+
+        <!-- Vehicle Panel -->
+        <div class="vehicle-panel">
+            <h2 onclick="toggleSection('vehicle_202')">Vehicle 202</h2>
+            <div id="vehicle_202" class="collapsible-content">
+                <!-- eSoC Chart -->
+                <h3 onclick="toggleSection('chart_esoc_202_container')">eSoC Over Time</h3>
+                <div id="chart_esoc_202_container" class="collapsible-content">
+                    <div class="chart-container">
+                        <canvas id="chart_esoc_202"></canvas>
+                    </div>
+                </div>
+
+                <!-- hSoC Chart -->
+                <h3 onclick="toggleSection('chart_hsoc_202_container')">hSoC Over Time</h3>
+                <div id="chart_hsoc_202_container" class="collapsible-content">
+                    <div class="chart-container">
+                        <canvas id="chart_hsoc_202"></canvas>
+                    </div>
+                </div>
+
+                <!-- Fuel Chart -->
+                <h3 onclick="toggleSection('chart_fuel_202_container')">Cumulative Fuel Over Time</h3>
+                <div id="chart_fuel_202_container" class="collapsible-content">
+                    <div class="chart-container">
+                        <canvas id="chart_fuel_202"></canvas>
+                    </div>
+                </div>
+
+                <!-- Load Weight Chart -->
+                <h3 onclick="toggleSection('chart_weight_202_container')">Load Weight Over Time</h3>
+                <div id="chart_weight_202_container" class="collapsible-content">
+                    <div class="chart-container">
+                        <canvas id="chart_weight_202"></canvas>
+                    </div>
+                </div>
+
+                <!-- Load Volume Chart -->
+                <h3 onclick="toggleSection('chart_volume_202_container')">Load Volume Over Time</h3>
+                <div id="chart_volume_202_container" class="collapsible-content">
+                    <div class="chart-container">
+                        <canvas id="chart_volume_202"></canvas>
+                    </div>
+                </div>
+            </div> <!-- End vehicle_202 collapsible -->
+        </div> <!-- End .vehicle-panel -->
+        
+
+        <!-- Vehicle Panel -->
+        <div class="vehicle-panel">
+            <h2 onclick="toggleSection('vehicle_301')">Vehicle 301</h2>
+            <div id="vehicle_301" class="collapsible-content">
+                <!-- eSoC Chart -->
+                <h3 onclick="toggleSection('chart_esoc_301_container')">eSoC Over Time</h3>
+                <div id="chart_esoc_301_container" class="collapsible-content">
+                    <div class="chart-container">
+                        <canvas id="chart_esoc_301"></canvas>
+                    </div>
+                </div>
+
+                <!-- hSoC Chart -->
+                <h3 onclick="toggleSection('chart_hsoc_301_container')">hSoC Over Time</h3>
+                <div id="chart_hsoc_301_container" class="collapsible-content">
+                    <div class="chart-container">
+                        <canvas id="chart_hsoc_301"></canvas>
+                    </div>
+                </div>
+
+                <!-- Fuel Chart -->
+                <h3 onclick="toggleSection('chart_fuel_301_container')">Cumulative Fuel Over Time</h3>
+                <div id="chart_fuel_301_container" class="collapsible-content">
+                    <div class="chart-container">
+                        <canvas id="chart_fuel_301"></canvas>
+                    </div>
+                </div>
+
+                <!-- Load Weight Chart -->
+                <h3 onclick="toggleSection('chart_weight_301_container')">Load Weight Over Time</h3>
+                <div id="chart_weight_301_container" class="collapsible-content">
+                    <div class="chart-container">
+                        <canvas id="chart_weight_301"></canvas>
+                    </div>
+                </div>
+
+                <!-- Load Volume Chart -->
+                <h3 onclick="toggleSection('chart_volume_301_container')">Load Volume Over Time</h3>
+                <div id="chart_volume_301_container" class="collapsible-content">
+                    <div class="chart-container">
+                        <canvas id="chart_volume_301"></canvas>
+                    </div>
+                </div>
+            </div> <!-- End vehicle_301 collapsible -->
+        </div> <!-- End .vehicle-panel -->
+        
+
+        </div> <!-- End #all-vehicles -->
+    </div> <!-- End .container -->
+    <div class="footer">
+        <p>Generated by Python + Chart.js</p>
+    </div>
+
+
+    <script>
+    function toggleSection(sectionId) {
+      var elem = document.getElementById(sectionId);
+      if (elem.style.display === 'none') {
+        elem.style.display = 'block';
+      } else {
+        elem.style.display = 'none';
+      }
+    }
+    </script>
+    
+<script>
+
+
+        // Vehicle 101 -- eSoC
+        new Chart(document.getElementById('chart_esoc_101'), {
+            type: 'line',
+            data: {
+                datasets: [{
+                    label: 'eSoC',
+                    data: [{"x": "2024-01-01T06:00:00", "y": 0}, {"x": "2024-01-01T06:00:00", "y": 0}, {"x": "2024-01-01T07:08:03", "y": 0}, {"x": "2024-01-01T07:53:03", "y": 0}, {"x": "2024-01-01T07:53:03", "y": 0}, {"x": "2024-01-01T08:38:03", "y": 0}, {"x": "2024-01-01T09:34:19", "y": 0}, {"x": "2024-01-01T10:04:19", "y": 0}, {"x": "2024-01-01T11:26:08", "y": 0}, {"x": "2024-01-01T11:56:08", "y": 0}, {"x": "2024-01-02T07:55:23", "y": 0}, {"x": "2024-01-02T08:25:23", "y": 0}, {"x": "2024-01-02T08:25:23", "y": 0}, {"x": "2024-01-02T08:55:23", "y": 0}, {"x": "2024-01-03T07:28:27", "y": 0}, {"x": "2024-01-03T08:13:27", "y": 0}, {"x": "2024-01-03T16:21:32", "y": 0}, {"x": "2024-01-03T16:51:32", "y": 0}, {"x": "2024-01-04T15:16:11", "y": 0}, {"x": "2024-01-04T15:16:11", "y": 0}],
+                    borderColor: '#26a0da',
+                    backgroundColor: 'rgba(38,160,218,0.2)',
+                    fill: true,
+                    tension: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        type: 'time',
+                        min: '2024-01-01T06:00:00',
+                        max: '2024-01-04T15:16:11',
+                        time: {
+                            tooltipFormat: 'dd MMM yyyy HH:mm'
+                        },
+                        ticks: { color: '#f3f3f3' }
+                    },
+                    y: {
+                        beginAtZero: true,
+                        ticks: { color: '#f3f3f3' }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: { color: '#f3f3f3' }
+                    }
+                }
+            }
+        });
+
+        // Vehicle 101 -- hSoC
+        new Chart(document.getElementById('chart_hsoc_101'), {
+            type: 'line',
+            data: {
+                datasets: [{
+                    label: 'hSoC',
+                    data: [{"x": "2024-01-01T06:00:00", "y": 0}, {"x": "2024-01-01T06:00:00", "y": 0}, {"x": "2024-01-01T07:08:03", "y": 0}, {"x": "2024-01-01T07:53:03", "y": 0}, {"x": "2024-01-01T07:53:03", "y": 0}, {"x": "2024-01-01T08:38:03", "y": 0}, {"x": "2024-01-01T09:34:19", "y": 0}, {"x": "2024-01-01T10:04:19", "y": 0}, {"x": "2024-01-01T11:26:08", "y": 0}, {"x": "2024-01-01T11:56:08", "y": 0}, {"x": "2024-01-02T07:55:23", "y": 0}, {"x": "2024-01-02T08:25:23", "y": 0}, {"x": "2024-01-02T08:25:23", "y": 0}, {"x": "2024-01-02T08:55:23", "y": 0}, {"x": "2024-01-03T07:28:27", "y": 0}, {"x": "2024-01-03T08:13:27", "y": 0}, {"x": "2024-01-03T16:21:32", "y": 0}, {"x": "2024-01-03T16:51:32", "y": 0}, {"x": "2024-01-04T15:16:11", "y": 0}, {"x": "2024-01-04T15:16:11", "y": 0}],
+                    borderColor: '#ffb26b',
+                    backgroundColor: 'rgba(255,178,107,0.2)',
+                    fill: true,
+                    tension: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        type: 'time',
+                        min: '2024-01-01T06:00:00',
+                        max: '2024-01-04T15:16:11',
+                        time: {
+                            tooltipFormat: 'dd MMM yyyy HH:mm'
+                        },
+                        ticks: { color: '#f3f3f3' }
+                    },
+                    y: {
+                        beginAtZero: true,
+                        ticks: { color: '#f3f3f3' }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: { color: '#f3f3f3' }
+                    }
+                }
+            }
+        });
+
+        // Vehicle 101 -- Cumulative Fuel
+        new Chart(document.getElementById('chart_fuel_101'), {
+            type: 'line',
+            data: {
+                datasets: [{
+                    label: 'Cumulative Fuel',
+                    data: [{"x": "2024-01-01T06:00:00", "y": 0}, {"x": "2024-01-01T06:00:00", "y": 0}, {"x": "2024-01-01T07:08:03", "y": 0.043028020302277724}, {"x": "2024-01-01T07:53:03", "y": 0.043028020302277724}, {"x": "2024-01-01T07:53:03", "y": 0.043028020302277724}, {"x": "2024-01-01T08:38:03", "y": 0.043028020302277724}, {"x": "2024-01-01T09:34:19", "y": 0.06784233339093305}, {"x": "2024-01-01T10:04:19", "y": 0.06784233339093305}, {"x": "2024-01-01T11:26:08", "y": 0.11406460747716682}, {"x": "2024-01-01T11:56:08", "y": 0.11406460747716682}, {"x": "2024-01-02T07:55:23", "y": 0.31331892437088926}, {"x": "2024-01-02T08:25:23", "y": 0.31331892437088926}, {"x": "2024-01-02T08:25:23", "y": 0.31331892437088926}, {"x": "2024-01-02T08:55:23", "y": 0.31331892437088926}, {"x": "2024-01-03T07:28:27", "y": 0.6892174532469735}, {"x": "2024-01-03T08:13:27", "y": 0.6892174532469735}, {"x": "2024-01-03T16:21:32", "y": 1.1298152688326488}, {"x": "2024-01-03T16:51:32", "y": 1.1298152688326488}, {"x": "2024-01-04T15:16:11", "y": 1.6032028262739988}, {"x": "2024-01-04T15:16:11", "y": 1.6032028262739988}],
+                    borderColor: '#8bc34a',
+                    backgroundColor: 'rgba(139,195,74,0.2)',
+                    fill: true,
+                    tension: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        type: 'time',
+                        min: '2024-01-01T06:00:00',
+                        max: '2024-01-04T15:16:11',
+                        time: {
+                            tooltipFormat: 'dd MMM yyyy HH:mm'
+                        },
+                        ticks: { color: '#f3f3f3' }
+                    },
+                    y: {
+                        beginAtZero: true,
+                        ticks: { color: '#f3f3f3' }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: { color: '#f3f3f3' }
+                    }
+                }
+            }
+        });
+
+        // Vehicle 101 -- Load Weight
+        new Chart(document.getElementById('chart_weight_101'), {
+            type: 'line',
+            data: {
+                datasets: [{
+                    label: 'Load Weight',
+                    data: [{"x": "2024-01-01T06:00:00", "y": 0}, {"x": "2024-01-01T06:00:00", "y": 0}, {"x": "2024-01-01T07:08:03", "y": 0}, {"x": "2024-01-01T07:53:03", "y": 4000}, {"x": "2024-01-01T07:53:03", "y": 4000}, {"x": "2024-01-01T08:38:03", "y": 6000}, {"x": "2024-01-01T09:34:19", "y": 6000}, {"x": "2024-01-01T10:04:19", "y": 4000}, {"x": "2024-01-01T11:26:08", "y": 4000}, {"x": "2024-01-01T11:56:08", "y": 0}, {"x": "2024-01-02T07:55:23", "y": 0}, {"x": "2024-01-02T08:25:23", "y": 7000}, {"x": "2024-01-02T08:25:23", "y": 7000}, {"x": "2024-01-02T08:55:23", "y": 15000}, {"x": "2024-01-03T07:28:27", "y": 15000}, {"x": "2024-01-03T08:13:27", "y": 7000}, {"x": "2024-01-03T16:21:32", "y": 7000}, {"x": "2024-01-03T16:51:32", "y": 0}, {"x": "2024-01-04T15:16:11", "y": 0}, {"x": "2024-01-04T15:16:11", "y": 0}],
+                    borderColor: '#f36eb2',
+                    backgroundColor: 'rgba(243,110,178,0.2)',
+                    fill: true,
+                    tension: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        type: 'time',
+                        min: '2024-01-01T06:00:00',
+                        max: '2024-01-04T15:16:11',
+                        time: {
+                            tooltipFormat: 'dd MMM yyyy HH:mm'
+                        },
+                        ticks: { color: '#f3f3f3' }
+                    },
+                    y: {
+                        beginAtZero: true,
+                        ticks: { color: '#f3f3f3' }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: { color: '#f3f3f3' }
+                    }
+                }
+            }
+        });
+
+        // Vehicle 101 -- Load Volume
+        new Chart(document.getElementById('chart_volume_101'), {
+            type: 'line',
+            data: {
+                datasets: [{
+                    label: 'Load Volume',
+                    data: [{"x": "2024-01-01T06:00:00", "y": 0}, {"x": "2024-01-01T06:00:00", "y": 0}, {"x": "2024-01-01T07:08:03", "y": 0}, {"x": "2024-01-01T07:53:03", "y": 9}, {"x": "2024-01-01T07:53:03", "y": 9}, {"x": "2024-01-01T08:38:03", "y": 13}, {"x": "2024-01-01T09:34:19", "y": 13}, {"x": "2024-01-01T10:04:19", "y": 9}, {"x": "2024-01-01T11:26:08", "y": 9}, {"x": "2024-01-01T11:56:08", "y": 0}, {"x": "2024-01-02T07:55:23", "y": 0}, {"x": "2024-01-02T08:25:23", "y": 4}, {"x": "2024-01-02T08:25:23", "y": 4}, {"x": "2024-01-02T08:55:23", "y": 9}, {"x": "2024-01-03T07:28:27", "y": 9}, {"x": "2024-01-03T08:13:27", "y": 4}, {"x": "2024-01-03T16:21:32", "y": 4}, {"x": "2024-01-03T16:51:32", "y": 0}, {"x": "2024-01-04T15:16:11", "y": 0}, {"x": "2024-01-04T15:16:11", "y": 0}],
+                    borderColor: '#9c27b0',
+                    backgroundColor: 'rgba(156,39,176,0.2)',
+                    fill: true,
+                    tension: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        type: 'time',
+                        min: '2024-01-01T06:00:00',
+                        max: '2024-01-04T15:16:11',
+                        time: {
+                            tooltipFormat: 'dd MMM yyyy HH:mm'
+                        },
+                        ticks: { color: '#f3f3f3' }
+                    },
+                    y: {
+                        beginAtZero: true,
+                        ticks: { color: '#f3f3f3' }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: { color: '#f3f3f3' }
+                    }
+                }
+            }
+        });
+        
+
+        // Vehicle 201 -- eSoC
+        new Chart(document.getElementById('chart_esoc_201'), {
+            type: 'line',
+            data: {
+                datasets: [{
+                    label: 'eSoC',
+                    data: [{"x": "2024-01-01T06:00:00", "y": 1}, {"x": "2024-01-01T06:00:00", "y": 1}, {"x": "2024-01-01T08:12:06", "y": 0.8897092968582495}, {"x": "2024-01-01T08:42:06", "y": 0.8897092968582495}, {"x": "2024-01-01T13:48:25", "y": 0.5875516328526313}, {"x": "2024-01-01T14:18:25", "y": 0.5875516328526313}, {"x": "2024-01-01T14:25:50", "y": 0.5845008071559687}, {"x": "2024-01-01T14:44:11", "y": 0.6845008071559687}, {"x": "2024-01-02T06:55:53", "y": 0.4849348474926993}, {"x": "2024-01-02T07:25:53", "y": 0.4849348474926993}, {"x": "2024-01-02T10:54:04", "y": 0.2513522727903206}, {"x": "2024-01-02T11:24:04", "y": 0.2513522727903206}, {"x": "2024-01-02T13:39:06", "y": 0.10984551577758717}, {"x": "2024-01-02T15:42:59", "y": 0.8098455157775871}, {"x": "2024-01-03T10:26:28", "y": 0.37933911052389846}, {"x": "2024-01-03T10:26:28", "y": 1}],
+                    borderColor: '#26a0da',
+                    backgroundColor: 'rgba(38,160,218,0.2)',
+                    fill: true,
+                    tension: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        type: 'time',
+                        min: '2024-01-01T06:00:00',
+                        max: '2024-01-04T15:16:11',
+                        time: {
+                            tooltipFormat: 'dd MMM yyyy HH:mm'
+                        },
+                        ticks: { color: '#f3f3f3' }
+                    },
+                    y: {
+                        beginAtZero: true,
+                        ticks: { color: '#f3f3f3' }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: { color: '#f3f3f3' }
+                    }
+                }
+            }
+        });
+
+        // Vehicle 201 -- hSoC
+        new Chart(document.getElementById('chart_hsoc_201'), {
+            type: 'line',
+            data: {
+                datasets: [{
+                    label: 'hSoC',
+                    data: [{"x": "2024-01-01T06:00:00", "y": 0}, {"x": "2024-01-01T06:00:00", "y": 0}, {"x": "2024-01-01T08:12:06", "y": 0}, {"x": "2024-01-01T08:42:06", "y": 0}, {"x": "2024-01-01T13:48:25", "y": 0}, {"x": "2024-01-01T14:18:25", "y": 0}, {"x": "2024-01-01T14:25:50", "y": 0}, {"x": "2024-01-01T14:44:11", "y": 0}, {"x": "2024-01-02T06:55:53", "y": 0}, {"x": "2024-01-02T07:25:53", "y": 0}, {"x": "2024-01-02T10:54:04", "y": 0}, {"x": "2024-01-02T11:24:04", "y": 0}, {"x": "2024-01-02T13:39:06", "y": 0}, {"x": "2024-01-02T15:42:59", "y": 0}, {"x": "2024-01-03T10:26:28", "y": 0}, {"x": "2024-01-03T10:26:28", "y": 0}],
+                    borderColor: '#ffb26b',
+                    backgroundColor: 'rgba(255,178,107,0.2)',
+                    fill: true,
+                    tension: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        type: 'time',
+                        min: '2024-01-01T06:00:00',
+                        max: '2024-01-04T15:16:11',
+                        time: {
+                            tooltipFormat: 'dd MMM yyyy HH:mm'
+                        },
+                        ticks: { color: '#f3f3f3' }
+                    },
+                    y: {
+                        beginAtZero: true,
+                        ticks: { color: '#f3f3f3' }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: { color: '#f3f3f3' }
+                    }
+                }
+            }
+        });
+
+        // Vehicle 201 -- Cumulative Fuel
+        new Chart(document.getElementById('chart_fuel_201'), {
+            type: 'line',
+            data: {
+                datasets: [{
+                    label: 'Cumulative Fuel',
+                    data: [{"x": "2024-01-01T06:00:00", "y": 0}, {"x": "2024-01-01T06:00:00", "y": 0}, {"x": "2024-01-01T08:12:06", "y": 0}, {"x": "2024-01-01T08:42:06", "y": 0}, {"x": "2024-01-01T13:48:25", "y": 0}, {"x": "2024-01-01T14:18:25", "y": 0}, {"x": "2024-01-01T14:25:50", "y": 0}, {"x": "2024-01-01T14:44:11", "y": 0}, {"x": "2024-01-02T06:55:53", "y": 0}, {"x": "2024-01-02T07:25:53", "y": 0}, {"x": "2024-01-02T10:54:04", "y": 0}, {"x": "2024-01-02T11:24:04", "y": 0}, {"x": "2024-01-02T13:39:06", "y": 0}, {"x": "2024-01-02T15:42:59", "y": 0}, {"x": "2024-01-03T10:26:28", "y": 0}, {"x": "2024-01-03T10:26:28", "y": 0}],
+                    borderColor: '#8bc34a',
+                    backgroundColor: 'rgba(139,195,74,0.2)',
+                    fill: true,
+                    tension: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        type: 'time',
+                        min: '2024-01-01T06:00:00',
+                        max: '2024-01-04T15:16:11',
+                        time: {
+                            tooltipFormat: 'dd MMM yyyy HH:mm'
+                        },
+                        ticks: { color: '#f3f3f3' }
+                    },
+                    y: {
+                        beginAtZero: true,
+                        ticks: { color: '#f3f3f3' }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: { color: '#f3f3f3' }
+                    }
+                }
+            }
+        });
+
+        // Vehicle 201 -- Load Weight
+        new Chart(document.getElementById('chart_weight_201'), {
+            type: 'line',
+            data: {
+                datasets: [{
+                    label: 'Load Weight',
+                    data: [{"x": "2024-01-01T06:00:00", "y": 0}, {"x": "2024-01-01T06:00:00", "y": 0}, {"x": "2024-01-01T08:12:06", "y": 0}, {"x": "2024-01-01T08:42:06", "y": 5000}, {"x": "2024-01-01T13:48:25", "y": 5000}, {"x": "2024-01-01T14:18:25", "y": 0}, {"x": "2024-01-01T14:25:50", "y": 0}, {"x": "2024-01-01T14:44:11", "y": 0}, {"x": "2024-01-02T06:55:53", "y": 0}, {"x": "2024-01-02T07:25:53", "y": 5000}, {"x": "2024-01-02T10:54:04", "y": 5000}, {"x": "2024-01-02T11:24:04", "y": 0}, {"x": "2024-01-02T13:39:06", "y": 0}, {"x": "2024-01-02T15:42:59", "y": 0}, {"x": "2024-01-03T10:26:28", "y": 0}, {"x": "2024-01-03T10:26:28", "y": 0}],
+                    borderColor: '#f36eb2',
+                    backgroundColor: 'rgba(243,110,178,0.2)',
+                    fill: true,
+                    tension: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        type: 'time',
+                        min: '2024-01-01T06:00:00',
+                        max: '2024-01-04T15:16:11',
+                        time: {
+                            tooltipFormat: 'dd MMM yyyy HH:mm'
+                        },
+                        ticks: { color: '#f3f3f3' }
+                    },
+                    y: {
+                        beginAtZero: true,
+                        ticks: { color: '#f3f3f3' }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: { color: '#f3f3f3' }
+                    }
+                }
+            }
+        });
+
+        // Vehicle 201 -- Load Volume
+        new Chart(document.getElementById('chart_volume_201'), {
+            type: 'line',
+            data: {
+                datasets: [{
+                    label: 'Load Volume',
+                    data: [{"x": "2024-01-01T06:00:00", "y": 0}, {"x": "2024-01-01T06:00:00", "y": 0}, {"x": "2024-01-01T08:12:06", "y": 0}, {"x": "2024-01-01T08:42:06", "y": 3}, {"x": "2024-01-01T13:48:25", "y": 3}, {"x": "2024-01-01T14:18:25", "y": 0}, {"x": "2024-01-01T14:25:50", "y": 0}, {"x": "2024-01-01T14:44:11", "y": 0}, {"x": "2024-01-02T06:55:53", "y": 0}, {"x": "2024-01-02T07:25:53", "y": 3}, {"x": "2024-01-02T10:54:04", "y": 3}, {"x": "2024-01-02T11:24:04", "y": 0}, {"x": "2024-01-02T13:39:06", "y": 0}, {"x": "2024-01-02T15:42:59", "y": 0}, {"x": "2024-01-03T10:26:28", "y": 0}, {"x": "2024-01-03T10:26:28", "y": 0}],
+                    borderColor: '#9c27b0',
+                    backgroundColor: 'rgba(156,39,176,0.2)',
+                    fill: true,
+                    tension: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        type: 'time',
+                        min: '2024-01-01T06:00:00',
+                        max: '2024-01-04T15:16:11',
+                        time: {
+                            tooltipFormat: 'dd MMM yyyy HH:mm'
+                        },
+                        ticks: { color: '#f3f3f3' }
+                    },
+                    y: {
+                        beginAtZero: true,
+                        ticks: { color: '#f3f3f3' }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: { color: '#f3f3f3' }
+                    }
+                }
+            }
+        });
+        
+
+        // Vehicle 202 -- eSoC
+        new Chart(document.getElementById('chart_esoc_202'), {
+            type: 'line',
+            data: {
+                datasets: [{
+                    label: 'eSoC',
+                    data: [{"x": "2024-01-01T06:00:00", "y": 1}, {"x": "2024-01-01T06:00:00", "y": 1}, {"x": "2024-01-01T07:29:13", "y": 0.9373976729735827}, {"x": "2024-01-01T07:59:13", "y": 0.9373976729735827}, {"x": "2024-01-01T08:22:12", "y": 0.9096236901505398}, {"x": "2024-01-01T08:52:12", "y": 0.9096236901505398}, {"x": "2024-01-01T09:41:04", "y": 0.862922717584671}, {"x": "2024-01-01T10:11:04", "y": 0.862922717584671}, {"x": "2024-01-01T13:02:13", "y": 0.7359523171755711}, {"x": "2024-01-01T13:32:13", "y": 0.7359523171755711}, {"x": "2024-01-02T08:23:49", "y": 0.2720559538828719}, {"x": "2024-01-02T09:08:49", "y": 0.2720559538828719}, {"x": "2024-01-02T09:19:03", "y": 0.26297831658676685}, {"x": "2024-01-02T11:32:41", "y": 0.9629783165867668}, {"x": "2024-01-02T15:06:01", "y": 0.7218496728795147}, {"x": "2024-01-02T15:51:01", "y": 0.7218496728795147}, {"x": "2024-01-03T11:51:07", "y": 0.26562109943406537}, {"x": "2024-01-03T12:43:35", "y": 0.5656210994340654}, {"x": "2024-01-04T08:12:04", "y": 0.1351146941803767}, {"x": "2024-01-04T08:12:04", "y": 1}],
+                    borderColor: '#26a0da',
+                    backgroundColor: 'rgba(38,160,218,0.2)',
+                    fill: true,
+                    tension: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        type: 'time',
+                        min: '2024-01-01T06:00:00',
+                        max: '2024-01-04T15:16:11',
+                        time: {
+                            tooltipFormat: 'dd MMM yyyy HH:mm'
+                        },
+                        ticks: { color: '#f3f3f3' }
+                    },
+                    y: {
+                        beginAtZero: true,
+                        ticks: { color: '#f3f3f3' }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: { color: '#f3f3f3' }
+                    }
+                }
+            }
+        });
+
+        // Vehicle 202 -- hSoC
+        new Chart(document.getElementById('chart_hsoc_202'), {
+            type: 'line',
+            data: {
+                datasets: [{
+                    label: 'hSoC',
+                    data: [{"x": "2024-01-01T06:00:00", "y": 0}, {"x": "2024-01-01T06:00:00", "y": 0}, {"x": "2024-01-01T07:29:13", "y": 0}, {"x": "2024-01-01T07:59:13", "y": 0}, {"x": "2024-01-01T08:22:12", "y": 0}, {"x": "2024-01-01T08:52:12", "y": 0}, {"x": "2024-01-01T09:41:04", "y": 0}, {"x": "2024-01-01T10:11:04", "y": 0}, {"x": "2024-01-01T13:02:13", "y": 0}, {"x": "2024-01-01T13:32:13", "y": 0}, {"x": "2024-01-02T08:23:49", "y": 0}, {"x": "2024-01-02T09:08:49", "y": 0}, {"x": "2024-01-02T09:19:03", "y": 0}, {"x": "2024-01-02T11:32:41", "y": 0}, {"x": "2024-01-02T15:06:01", "y": 0}, {"x": "2024-01-02T15:51:01", "y": 0}, {"x": "2024-01-03T11:51:07", "y": 0}, {"x": "2024-01-03T12:43:35", "y": 0}, {"x": "2024-01-04T08:12:04", "y": 0}, {"x": "2024-01-04T08:12:04", "y": 0}],
+                    borderColor: '#ffb26b',
+                    backgroundColor: 'rgba(255,178,107,0.2)',
+                    fill: true,
+                    tension: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        type: 'time',
+                        min: '2024-01-01T06:00:00',
+                        max: '2024-01-04T15:16:11',
+                        time: {
+                            tooltipFormat: 'dd MMM yyyy HH:mm'
+                        },
+                        ticks: { color: '#f3f3f3' }
+                    },
+                    y: {
+                        beginAtZero: true,
+                        ticks: { color: '#f3f3f3' }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: { color: '#f3f3f3' }
+                    }
+                }
+            }
+        });
+
+        // Vehicle 202 -- Cumulative Fuel
+        new Chart(document.getElementById('chart_fuel_202'), {
+            type: 'line',
+            data: {
+                datasets: [{
+                    label: 'Cumulative Fuel',
+                    data: [{"x": "2024-01-01T06:00:00", "y": 0}, {"x": "2024-01-01T06:00:00", "y": 0}, {"x": "2024-01-01T07:29:13", "y": 0}, {"x": "2024-01-01T07:59:13", "y": 0}, {"x": "2024-01-01T08:22:12", "y": 0}, {"x": "2024-01-01T08:52:12", "y": 0}, {"x": "2024-01-01T09:41:04", "y": 0}, {"x": "2024-01-01T10:11:04", "y": 0}, {"x": "2024-01-01T13:02:13", "y": 0}, {"x": "2024-01-01T13:32:13", "y": 0}, {"x": "2024-01-02T08:23:49", "y": 0}, {"x": "2024-01-02T09:08:49", "y": 0}, {"x": "2024-01-02T09:19:03", "y": 0}, {"x": "2024-01-02T11:32:41", "y": 0}, {"x": "2024-01-02T15:06:01", "y": 0}, {"x": "2024-01-02T15:51:01", "y": 0}, {"x": "2024-01-03T11:51:07", "y": 0}, {"x": "2024-01-03T12:43:35", "y": 0}, {"x": "2024-01-04T08:12:04", "y": 0}, {"x": "2024-01-04T08:12:04", "y": 0}],
+                    borderColor: '#8bc34a',
+                    backgroundColor: 'rgba(139,195,74,0.2)',
+                    fill: true,
+                    tension: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        type: 'time',
+                        min: '2024-01-01T06:00:00',
+                        max: '2024-01-04T15:16:11',
+                        time: {
+                            tooltipFormat: 'dd MMM yyyy HH:mm'
+                        },
+                        ticks: { color: '#f3f3f3' }
+                    },
+                    y: {
+                        beginAtZero: true,
+                        ticks: { color: '#f3f3f3' }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: { color: '#f3f3f3' }
+                    }
+                }
+            }
+        });
+
+        // Vehicle 202 -- Load Weight
+        new Chart(document.getElementById('chart_weight_202'), {
+            type: 'line',
+            data: {
+                datasets: [{
+                    label: 'Load Weight',
+                    data: [{"x": "2024-01-01T06:00:00", "y": 0}, {"x": "2024-01-01T06:00:00", "y": 0}, {"x": "2024-01-01T07:29:13", "y": 0}, {"x": "2024-01-01T07:59:13", "y": 4000}, {"x": "2024-01-01T08:22:12", "y": 4000}, {"x": "2024-01-01T08:52:12", "y": 7000}, {"x": "2024-01-01T09:41:04", "y": 7000}, {"x": "2024-01-01T10:11:04", "y": 4000}, {"x": "2024-01-01T13:02:13", "y": 4000}, {"x": "2024-01-01T13:32:13", "y": 10000}, {"x": "2024-01-02T08:23:49", "y": 10000}, {"x": "2024-01-02T09:08:49", "y": 4000}, {"x": "2024-01-02T09:19:03", "y": 4000}, {"x": "2024-01-02T11:32:41", "y": 4000}, {"x": "2024-01-02T15:06:01", "y": 4000}, {"x": "2024-01-02T15:51:01", "y": 0}, {"x": "2024-01-03T11:51:07", "y": 0}, {"x": "2024-01-03T12:43:35", "y": 0}, {"x": "2024-01-04T08:12:04", "y": 0}, {"x": "2024-01-04T08:12:04", "y": 0}],
+                    borderColor: '#f36eb2',
+                    backgroundColor: 'rgba(243,110,178,0.2)',
+                    fill: true,
+                    tension: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        type: 'time',
+                        min: '2024-01-01T06:00:00',
+                        max: '2024-01-04T15:16:11',
+                        time: {
+                            tooltipFormat: 'dd MMM yyyy HH:mm'
+                        },
+                        ticks: { color: '#f3f3f3' }
+                    },
+                    y: {
+                        beginAtZero: true,
+                        ticks: { color: '#f3f3f3' }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: { color: '#f3f3f3' }
+                    }
+                }
+            }
+        });
+
+        // Vehicle 202 -- Load Volume
+        new Chart(document.getElementById('chart_volume_202'), {
+            type: 'line',
+            data: {
+                datasets: [{
+                    label: 'Load Volume',
+                    data: [{"x": "2024-01-01T06:00:00", "y": 0}, {"x": "2024-01-01T06:00:00", "y": 0}, {"x": "2024-01-01T07:29:13", "y": 0}, {"x": "2024-01-01T07:59:13", "y": 22}, {"x": "2024-01-01T08:22:12", "y": 22}, {"x": "2024-01-01T08:52:12", "y": 25}, {"x": "2024-01-01T09:41:04", "y": 25}, {"x": "2024-01-01T10:11:04", "y": 22}, {"x": "2024-01-01T13:02:13", "y": 22}, {"x": "2024-01-01T13:32:13", "y": 29}, {"x": "2024-01-02T08:23:49", "y": 29}, {"x": "2024-01-02T09:08:49", "y": 22}, {"x": "2024-01-02T09:19:03", "y": 22}, {"x": "2024-01-02T11:32:41", "y": 22}, {"x": "2024-01-02T15:06:01", "y": 22}, {"x": "2024-01-02T15:51:01", "y": 0}, {"x": "2024-01-03T11:51:07", "y": 0}, {"x": "2024-01-03T12:43:35", "y": 0}, {"x": "2024-01-04T08:12:04", "y": 0}, {"x": "2024-01-04T08:12:04", "y": 0}],
+                    borderColor: '#9c27b0',
+                    backgroundColor: 'rgba(156,39,176,0.2)',
+                    fill: true,
+                    tension: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        type: 'time',
+                        min: '2024-01-01T06:00:00',
+                        max: '2024-01-04T15:16:11',
+                        time: {
+                            tooltipFormat: 'dd MMM yyyy HH:mm'
+                        },
+                        ticks: { color: '#f3f3f3' }
+                    },
+                    y: {
+                        beginAtZero: true,
+                        ticks: { color: '#f3f3f3' }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: { color: '#f3f3f3' }
+                    }
+                }
+            }
+        });
+        
+
+        // Vehicle 301 -- eSoC
+        new Chart(document.getElementById('chart_esoc_301'), {
+            type: 'line',
+            data: {
+                datasets: [{
+                    label: 'eSoC',
+                    data: [{"x": "2024-01-01T06:00:00", "y": 0}, {"x": "2024-01-01T06:00:00", "y": 0}, {"x": "2024-01-01T07:05:34", "y": 0}, {"x": "2024-01-01T07:35:34", "y": 0}, {"x": "2024-01-01T07:35:34", "y": 0}, {"x": "2024-01-01T08:05:34", "y": 0}, {"x": "2024-01-01T08:05:34", "y": 0}, {"x": "2024-01-01T08:35:34", "y": 0}, {"x": "2024-01-01T09:23:51", "y": 0}, {"x": "2024-01-01T09:53:51", "y": 0}, {"x": "2024-01-01T10:37:02", "y": 0}, {"x": "2024-01-01T11:07:02", "y": 0}, {"x": "2024-01-01T11:52:07", "y": 0}, {"x": "2024-01-01T12:22:07", "y": 0}, {"x": "2024-01-02T10:05:40", "y": 0}, {"x": "2024-01-02T10:20:40", "y": 0}, {"x": "2024-01-02T10:38:27", "y": 0}, {"x": "2024-01-02T11:08:27", "y": 0}, {"x": "2024-01-03T10:00:52", "y": 0}, {"x": "2024-01-03T10:30:52", "y": 0}, {"x": "2024-01-03T11:19:51", "y": 0}, {"x": "2024-01-03T11:34:51", "y": 0}, {"x": "2024-01-03T12:35:22", "y": 0}, {"x": "2024-01-03T12:35:22", "y": 0}],
+                    borderColor: '#26a0da',
+                    backgroundColor: 'rgba(38,160,218,0.2)',
+                    fill: true,
+                    tension: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        type: 'time',
+                        min: '2024-01-01T06:00:00',
+                        max: '2024-01-04T15:16:11',
+                        time: {
+                            tooltipFormat: 'dd MMM yyyy HH:mm'
+                        },
+                        ticks: { color: '#f3f3f3' }
+                    },
+                    y: {
+                        beginAtZero: true,
+                        ticks: { color: '#f3f3f3' }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: { color: '#f3f3f3' }
+                    }
+                }
+            }
+        });
+
+        // Vehicle 301 -- hSoC
+        new Chart(document.getElementById('chart_hsoc_301'), {
+            type: 'line',
+            data: {
+                datasets: [{
+                    label: 'hSoC',
+                    data: [{"x": "2024-01-01T06:00:00", "y": 1}, {"x": "2024-01-01T06:00:00", "y": 1}, {"x": "2024-01-01T07:05:34", "y": 0.9349111781474736}, {"x": "2024-01-01T07:35:34", "y": 0.9349111781474736}, {"x": "2024-01-01T07:35:34", "y": 0.9349111781474736}, {"x": "2024-01-01T08:05:34", "y": 0.9349111781474736}, {"x": "2024-01-01T08:05:34", "y": 0.9349111781474736}, {"x": "2024-01-01T08:35:34", "y": 0.9349111781474736}, {"x": "2024-01-01T09:23:51", "y": 0.8955317061214824}, {"x": "2024-01-01T09:53:51", "y": 0.8955317061214824}, {"x": "2024-01-01T10:37:02", "y": 0.8562854919072063}, {"x": "2024-01-01T11:07:02", "y": 0.8562854919072063}, {"x": "2024-01-01T11:52:07", "y": 0.8277237238218838}, {"x": "2024-01-01T12:22:07", "y": 0.8277237238218838}, {"x": "2024-01-02T10:05:40", "y": 0.3227205031137411}, {"x": "2024-01-02T10:20:40", "y": 1}, {"x": "2024-01-02T10:38:27", "y": 0.9788806463456783}, {"x": "2024-01-02T11:08:27", "y": 0.9788806463456783}, {"x": "2024-01-03T10:00:52", "y": 0.18198815290928594}, {"x": "2024-01-03T10:30:52", "y": 0.18198815290928594}, {"x": "2024-01-03T11:19:51", "y": 0.13375043598437159}, {"x": "2024-01-03T11:34:51", "y": 1}, {"x": "2024-01-03T12:35:22", "y": 0.9268265296248311}, {"x": "2024-01-03T12:35:22", "y": 1}],
+                    borderColor: '#ffb26b',
+                    backgroundColor: 'rgba(255,178,107,0.2)',
+                    fill: true,
+                    tension: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        type: 'time',
+                        min: '2024-01-01T06:00:00',
+                        max: '2024-01-04T15:16:11',
+                        time: {
+                            tooltipFormat: 'dd MMM yyyy HH:mm'
+                        },
+                        ticks: { color: '#f3f3f3' }
+                    },
+                    y: {
+                        beginAtZero: true,
+                        ticks: { color: '#f3f3f3' }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: { color: '#f3f3f3' }
+                    }
+                }
+            }
+        });
+
+        // Vehicle 301 -- Cumulative Fuel
+        new Chart(document.getElementById('chart_fuel_301'), {
+            type: 'line',
+            data: {
+                datasets: [{
+                    label: 'Cumulative Fuel',
+                    data: [{"x": "2024-01-01T06:00:00", "y": 0}, {"x": "2024-01-01T06:00:00", "y": 0}, {"x": "2024-01-01T07:05:34", "y": 0}, {"x": "2024-01-01T07:35:34", "y": 0}, {"x": "2024-01-01T07:35:34", "y": 0}, {"x": "2024-01-01T08:05:34", "y": 0}, {"x": "2024-01-01T08:05:34", "y": 0}, {"x": "2024-01-01T08:35:34", "y": 0}, {"x": "2024-01-01T09:23:51", "y": 0}, {"x": "2024-01-01T09:53:51", "y": 0}, {"x": "2024-01-01T10:37:02", "y": 0}, {"x": "2024-01-01T11:07:02", "y": 0}, {"x": "2024-01-01T11:52:07", "y": 0}, {"x": "2024-01-01T12:22:07", "y": 0}, {"x": "2024-01-02T10:05:40", "y": 0}, {"x": "2024-01-02T10:20:40", "y": 0}, {"x": "2024-01-02T10:38:27", "y": 0}, {"x": "2024-01-02T11:08:27", "y": 0}, {"x": "2024-01-03T10:00:52", "y": 0}, {"x": "2024-01-03T10:30:52", "y": 0}, {"x": "2024-01-03T11:19:51", "y": 0}, {"x": "2024-01-03T11:34:51", "y": 0}, {"x": "2024-01-03T12:35:22", "y": 0}, {"x": "2024-01-03T12:35:22", "y": 0}],
+                    borderColor: '#8bc34a',
+                    backgroundColor: 'rgba(139,195,74,0.2)',
+                    fill: true,
+                    tension: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        type: 'time',
+                        min: '2024-01-01T06:00:00',
+                        max: '2024-01-04T15:16:11',
+                        time: {
+                            tooltipFormat: 'dd MMM yyyy HH:mm'
+                        },
+                        ticks: { color: '#f3f3f3' }
+                    },
+                    y: {
+                        beginAtZero: true,
+                        ticks: { color: '#f3f3f3' }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: { color: '#f3f3f3' }
+                    }
+                }
+            }
+        });
+
+        // Vehicle 301 -- Load Weight
+        new Chart(document.getElementById('chart_weight_301'), {
+            type: 'line',
+            data: {
+                datasets: [{
+                    label: 'Load Weight',
+                    data: [{"x": "2024-01-01T06:00:00", "y": 0}, {"x": "2024-01-01T06:00:00", "y": 0}, {"x": "2024-01-01T07:05:34", "y": 0}, {"x": "2024-01-01T07:35:34", "y": 2000}, {"x": "2024-01-01T07:35:34", "y": 2000}, {"x": "2024-01-01T08:05:34", "y": 6000}, {"x": "2024-01-01T08:05:34", "y": 6000}, {"x": "2024-01-01T08:35:34", "y": 9000}, {"x": "2024-01-01T09:23:51", "y": 9000}, {"x": "2024-01-01T09:53:51", "y": 6000}, {"x": "2024-01-01T10:37:02", "y": 6000}, {"x": "2024-01-01T11:07:02", "y": 2000}, {"x": "2024-01-01T11:52:07", "y": 2000}, {"x": "2024-01-01T12:22:07", "y": 0}, {"x": "2024-01-02T10:05:40", "y": 0}, {"x": "2024-01-02T10:20:40", "y": 0}, {"x": "2024-01-02T10:38:27", "y": 0}, {"x": "2024-01-02T11:08:27", "y": 12000}, {"x": "2024-01-03T10:00:52", "y": 12000}, {"x": "2024-01-03T10:30:52", "y": 0}, {"x": "2024-01-03T11:19:51", "y": 0}, {"x": "2024-01-03T11:34:51", "y": 0}, {"x": "2024-01-03T12:35:22", "y": 0}, {"x": "2024-01-03T12:35:22", "y": 0}],
+                    borderColor: '#f36eb2',
+                    backgroundColor: 'rgba(243,110,178,0.2)',
+                    fill: true,
+                    tension: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        type: 'time',
+                        min: '2024-01-01T06:00:00',
+                        max: '2024-01-04T15:16:11',
+                        time: {
+                            tooltipFormat: 'dd MMM yyyy HH:mm'
+                        },
+                        ticks: { color: '#f3f3f3' }
+                    },
+                    y: {
+                        beginAtZero: true,
+                        ticks: { color: '#f3f3f3' }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: { color: '#f3f3f3' }
+                    }
+                }
+            }
+        });
+
+        // Vehicle 301 -- Load Volume
+        new Chart(document.getElementById('chart_volume_301'), {
+            type: 'line',
+            data: {
+                datasets: [{
+                    label: 'Load Volume',
+                    data: [{"x": "2024-01-01T06:00:00", "y": 0}, {"x": "2024-01-01T06:00:00", "y": 0}, {"x": "2024-01-01T07:05:34", "y": 0}, {"x": "2024-01-01T07:35:34", "y": 4}, {"x": "2024-01-01T07:35:34", "y": 4}, {"x": "2024-01-01T08:05:34", "y": 12}, {"x": "2024-01-01T08:05:34", "y": 12}, {"x": "2024-01-01T08:35:34", "y": 19}, {"x": "2024-01-01T09:23:51", "y": 19}, {"x": "2024-01-01T09:53:51", "y": 12}, {"x": "2024-01-01T10:37:02", "y": 12}, {"x": "2024-01-01T11:07:02", "y": 4}, {"x": "2024-01-01T11:52:07", "y": 4}, {"x": "2024-01-01T12:22:07", "y": 0}, {"x": "2024-01-02T10:05:40", "y": 0}, {"x": "2024-01-02T10:20:40", "y": 0}, {"x": "2024-01-02T10:38:27", "y": 0}, {"x": "2024-01-02T11:08:27", "y": 7}, {"x": "2024-01-03T10:00:52", "y": 7}, {"x": "2024-01-03T10:30:52", "y": 0}, {"x": "2024-01-03T11:19:51", "y": 0}, {"x": "2024-01-03T11:34:51", "y": 0}, {"x": "2024-01-03T12:35:22", "y": 0}, {"x": "2024-01-03T12:35:22", "y": 0}],
+                    borderColor: '#9c27b0',
+                    backgroundColor: 'rgba(156,39,176,0.2)',
+                    fill: true,
+                    tension: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        type: 'time',
+                        min: '2024-01-01T06:00:00',
+                        max: '2024-01-04T15:16:11',
+                        time: {
+                            tooltipFormat: 'dd MMM yyyy HH:mm'
+                        },
+                        ticks: { color: '#f3f3f3' }
+                    },
+                    y: {
+                        beginAtZero: true,
+                        ticks: { color: '#f3f3f3' }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: { color: '#f3f3f3' }
+                    }
+                }
+            }
+        });
+        
+
+</script>
+
+</body>
+</html>
