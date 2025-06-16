@@ -109,7 +109,7 @@ This data is provided as part of the ESCALATE project deliverable and is intende
 
 ## Author
 
-Theo Koch
-Intitute for Automotive Engineering Aachen (ika)
-RWTH Aachen University
-theo.koch@ika.rwth-aachen.de
+Theo Koch 
+Intitute for Automotive Engineering Aachen (ika) 
+RWTH Aachen University 
+theo.koch@ika.rwth-aachen.de 
