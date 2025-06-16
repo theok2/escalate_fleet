@@ -1,1 +1,1647 @@
-{"summary": {"cost": 8654.54539197237, "distance": 7991963.0, "duration": 416270.40273037046, "penalty": 0, "penalty_customers": 0, "penalty_time_windows": 0, "penalty_work_overtime": 0, "penalty_below_zero_soc": 0, "vehicles_TCO_CAPEX": [0, 132.99234187883025, 132.99234187883025, 132.99234187883025, 132.99234187883025], "vehicles_TCO_OM": [0, 246.30667085348742, 427.49601512599884, 300.050804183473, 238.58567926619813], "vehicles_TCO_toll": [0, 207.6964359629408, 360.48312626840976, 253.01581325741512, 201.1857619758211], "vehicles_TCO_CO2": [0, 106.51099280150807, 184.86314167610757, 129.75169910636674, 103.17218562862622], "vehicles_TCO_energy": [0, 533.2069548133084, 1052.7099366416305, 698.803779307013, 607.5771650343198], "vehicles_TCO_wage": [0, 487.7055710255455, 831.1946724312905, 633.6013140754219, 471.14143233677316], "vehicles_TCO_insurance": [0, 11.87921817134847, 11.87921817134847, 11.87921817134847, 11.87921817134847]}, "tours": [{"vehicle_id": 102, "stops": [{"stop": 1, "time": {"arrival": "2024-01-01T06:00:00Z", "departure": "2024-01-01T06:00:00Z"}, "location": {"longitude": 9.9713168, "latitude": 48.4375177}, "shift_time": {"arrival": "00:00:00", "departure": "00:00:00"}, "driving_time_since_resting": {"arrival": "00:00:00", "departure": "00:00:00"}, "step_resting_number": 0, "step_resting_time": "00:00:00", "step_nighting_number": 0, "step_nighting_time": "00:00:00", "delta_driving_time": "00:00:00", "delta_waiting_time": "00:00:00", "delta_serving_time": "00:00:00", "delta_charging_time": "00:00:00", "delta_hydrogen_refueling_time": "00:00:00", "delta_resting_time": "00:00:00", "load_weight": {"arrival": 0, "departure": 0}, "load_volume": {"arrival": 0, "departure": 0}, "cumulative_fuel_demand": 0, "esoc": {"arrival": 0, "departure": 0}, "hsoc": {"arrival": 0, "departure": 0}}, {"stop": 2, "time": {"arrival": "2024-01-01T08:12:06Z", "departure": "2024-01-01T08:57:06Z"}, "location": {"longitude": 11.443928200000002, "latitude": 48.77275900000001}, "shift_time": {"arrival": "02:12:06", "departure": "02:57:06"}, "driving_time_since_resting": {"arrival": "02:12:06", "departure": "00:00:00"}, "step_resting_number": 0, "step_resting_time": "00:00:00", "step_nighting_number": 0, "step_nighting_time": "00:00:00", "delta_driving_time": "02:12:06", "delta_waiting_time": "00:00:00", "delta_serving_time": "00:30:00", "delta_charging_time": "00:00:00", "delta_hydrogen_refueling_time": "00:00:00", "delta_resting_time": "00:15:00", "load_weight": {"arrival": 0, "departure": 5000}, "load_volume": {"arrival": 0, "departure": 3}, "cumulative_fuel_demand": 0.04282592633579662, "esoc": {"arrival": 0, "departure": 0}, "hsoc": {"arrival": 0, "departure": 0}}, {"stop": 3, "time": {"arrival": "2024-01-01T13:18:23Z", "departure": "2024-01-01T13:48:23Z"}, "location": {"longitude": 12.277003199999998, "latitude": 51.3237991}, "shift_time": {"arrival": "07:18:23", "departure": "07:48:23"}, "driving_time_since_resting": {"arrival": "04:21:17", "departure": "04:21:17"}, "step_resting_number": 0, "step_resting_time": "00:00:00", "step_nighting_number": 0, "step_nighting_time": "00:00:00", "delta_driving_time": "04:21:17", "delta_waiting_time": "00:00:00", "delta_serving_time": "00:30:00", "delta_charging_time": "00:00:00", "delta_hydrogen_refueling_time": "00:00:00", "delta_resting_time": "00:00:00", "load_weight": {"arrival": 5000, "departure": 0}, "load_volume": {"arrival": 3, "departure": 0}, "cumulative_fuel_demand": 0.16712206861487675, "esoc": {"arrival": 0, "departure": 0}, "hsoc": {"arrival": 0, "departure": 0}}, {"stop": 4, "time": {"arrival": "2024-01-02T06:51:59Z", "departure": "2024-01-02T07:21:59Z"}, "location": {"longitude": 9.8007603, "latitude": 52.40967060000001}, "shift_time": {"arrival": "00:51:59", "departure": "01:21:59"}, "driving_time_since_resting": {"arrival": "00:51:59", "departure": "00:51:59"}, "step_resting_number": 1, "step_resting_time": "00:45:00", "step_nighting_number": 1, "step_nighting_time": "13:00:00", "delta_driving_time": "03:18:35", "delta_waiting_time": "00:00:00", "delta_serving_time": "00:30:00", "delta_charging_time": "00:00:00", "delta_hydrogen_refueling_time": "00:00:00", "delta_resting_time": "00:00:00", "load_weight": {"arrival": 0, "departure": 5000}, "load_volume": {"arrival": 0, "departure": 3}, "cumulative_fuel_demand": 0.24112213533648907, "esoc": {"arrival": 0, "departure": 0}, "hsoc": {"arrival": 0, "departure": 0}}, {"stop": 5, "time": {"arrival": "2024-01-02T10:50:09Z", "departure": "2024-01-02T11:20:09Z"}, "location": {"longitude": 13.3122043, "latitude": 52.4232351}, "shift_time": {"arrival": "04:50:09", "departure": "05:20:09"}, "driving_time_since_resting": {"arrival": "04:20:09", "departure": "00:00:00"}, "step_resting_number": 0, "step_resting_time": "00:00:00", "step_nighting_number": 0, "step_nighting_time": "00:00:00", "delta_driving_time": "03:28:10", "delta_waiting_time": "00:00:00", "delta_serving_time": "00:30:00", "delta_charging_time": "00:00:00", "delta_hydrogen_refueling_time": "00:00:00", "delta_resting_time": "00:00:00", "load_weight": {"arrival": 5000, "departure": 0}, "load_volume": {"arrival": 3, "departure": 0}, "cumulative_fuel_demand": 0.32690116841819794, "esoc": {"arrival": 0, "departure": 0}, "hsoc": {"arrival": 0, "departure": 0}}, {"stop": 6, "time": {"arrival": "2024-01-03T08:46:05Z", "departure": "2024-01-03T08:46:05Z"}, "location": {"longitude": 9.9713168, "latitude": 48.4375177}, "shift_time": {"arrival": "03:01:05", "departure": "03:01:05"}, "driving_time_since_resting": {"arrival": "03:01:05", "departure": "03:01:05"}, "step_resting_number": 1, "step_resting_time": "00:45:00", "step_nighting_number": 1, "step_nighting_time": "13:00:00", "delta_driving_time": "07:40:55", "delta_waiting_time": "00:00:00", "delta_serving_time": "00:00:00", "delta_charging_time": "00:00:00", "delta_hydrogen_refueling_time": "00:00:00", "delta_resting_time": "00:00:00", "load_weight": {"arrival": 0, "departure": 0}, "load_volume": {"arrival": 0, "departure": 0}, "cumulative_fuel_demand": 0.5329680921737219, "esoc": {"arrival": 0, "departure": 0}, "hsoc": {"arrival": 0, "departure": 0}}]}, {"vehicle_id": 103, "stops": [{"stop": 1, "time": {"arrival": "2024-01-01T06:00:00Z", "departure": "2024-01-01T06:00:00Z"}, "location": {"longitude": 9.9713168, "latitude": 48.4375177}, "shift_time": {"arrival": "00:00:00", "departure": "00:00:00"}, "driving_time_since_resting": {"arrival": "00:00:00", "departure": "00:00:00"}, "step_resting_number": 0, "step_resting_time": "00:00:00", "step_nighting_number": 0, "step_nighting_time": "00:00:00", "delta_driving_time": "00:00:00", "delta_waiting_time": "00:00:00", "delta_serving_time": "00:00:00", "delta_charging_time": "00:00:00", "delta_hydrogen_refueling_time": "00:00:00", "delta_resting_time": "00:00:00", "load_weight": {"arrival": 0, "departure": 0}, "load_volume": {"arrival": 0, "departure": 0}, "cumulative_fuel_demand": 0, "esoc": {"arrival": 0, "departure": 0}, "hsoc": {"arrival": 0, "departure": 0}}, {"stop": 2, "time": {"arrival": "2024-01-01T07:05:34Z", "departure": "2024-01-01T07:35:34Z"}, "location": {"longitude": 10.8372976, "latitude": 48.3758085}, "shift_time": {"arrival": "01:05:34", "departure": "01:35:34"}, "driving_time_since_resting": {"arrival": "01:05:34", "departure": "01:05:34"}, "step_resting_number": 0, "step_resting_time": "00:00:00", "step_nighting_number": 0, "step_nighting_time": "00:00:00", "delta_driving_time": "01:05:34", "delta_waiting_time": "00:00:00", "delta_serving_time": "00:30:00", "delta_charging_time": "00:00:00", "delta_hydrogen_refueling_time": "00:00:00", "delta_resting_time": "00:00:00", "load_weight": {"arrival": 0, "departure": 2000}, "load_volume": {"arrival": 0, "departure": 4}, "cumulative_fuel_demand": 0.025227123950460884, "esoc": {"arrival": 0, "departure": 0}, "hsoc": {"arrival": 0, "departure": 0}}, {"stop": 3, "time": {"arrival": "2024-01-01T07:35:34Z", "departure": "2024-01-01T08:05:34Z"}, "location": {"longitude": 10.8372976, "latitude": 48.3758085}, "shift_time": {"arrival": "01:35:34", "departure": "02:05:34"}, "driving_time_since_resting": {"arrival": "01:05:34", "departure": "00:00:00"}, "step_resting_number": 0, "step_resting_time": "00:00:00", "step_nighting_number": 0, "step_nighting_time": "00:00:00", "delta_driving_time": "00:00:00", "delta_waiting_time": "00:00:00", "delta_serving_time": "00:30:00", "delta_charging_time": "00:00:00", "delta_hydrogen_refueling_time": "00:00:00", "delta_resting_time": "00:00:00", "load_weight": {"arrival": 2000, "departure": 6000}, "load_volume": {"arrival": 4, "departure": 12}, "cumulative_fuel_demand": 0.025227123950460884, "esoc": {"arrival": 0, "departure": 0}, "hsoc": {"arrival": 0, "departure": 0}}, {"stop": 4, "time": {"arrival": "2024-01-01T08:05:34Z", "departure": "2024-01-01T08:35:34Z"}, "location": {"longitude": 10.8372976, "latitude": 48.3758085}, "shift_time": {"arrival": "02:05:34", "departure": "02:35:34"}, "driving_time_since_resting": {"arrival": "00:00:00", "departure": "00:00:00"}, "step_resting_number": 0, "step_resting_time": "00:00:00", "step_nighting_number": 0, "step_nighting_time": "00:00:00", "delta_driving_time": "00:00:00", "delta_waiting_time": "00:00:00", "delta_serving_time": "00:30:00", "delta_charging_time": "00:00:00", "delta_hydrogen_refueling_time": "00:00:00", "delta_resting_time": "00:00:00", "load_weight": {"arrival": 6000, "departure": 9000}, "load_volume": {"arrival": 12, "departure": 19}, "cumulative_fuel_demand": 0.025227123950460884, "esoc": {"arrival": 0, "departure": 0}, "hsoc": {"arrival": 0, "departure": 0}}, {"stop": 5, "time": {"arrival": "2024-01-01T09:23:51Z", "departure": "2024-01-01T09:53:51Z"}, "location": {"longitude": 10.354045499999998, "latitude": 48.2544815}, "shift_time": {"arrival": "03:23:51", "departure": "03:53:51"}, "driving_time_since_resting": {"arrival": "00:48:16", "departure": "00:48:16"}, "step_resting_number": 0, "step_resting_time": "00:00:00", "step_nighting_number": 0, "step_nighting_time": "00:00:00", "delta_driving_time": "00:48:16", "delta_waiting_time": "00:00:00", "delta_serving_time": "00:30:00", "delta_charging_time": "00:00:00", "delta_hydrogen_refueling_time": "00:00:00", "delta_resting_time": "00:00:00", "load_weight": {"arrival": 9000, "departure": 6000}, "load_volume": {"arrival": 19, "departure": 12}, "cumulative_fuel_demand": 0.042389500097259995, "esoc": {"arrival": 0, "departure": 0}, "hsoc": {"arrival": 0, "departure": 0}}, {"stop": 6, "time": {"arrival": "2024-01-01T10:37:02Z", "departure": "2024-01-01T11:07:02Z"}, "location": {"longitude": 10.184406299999997, "latitude": 47.9929274}, "shift_time": {"arrival": "04:37:02", "departure": "05:07:02"}, "driving_time_since_resting": {"arrival": "01:31:27", "departure": "01:31:27"}, "step_resting_number": 0, "step_resting_time": "00:00:00", "step_nighting_number": 0, "step_nighting_time": "00:00:00", "delta_driving_time": "00:43:11", "delta_waiting_time": "00:00:00", "delta_serving_time": "00:30:00", "delta_charging_time": "00:00:00", "delta_hydrogen_refueling_time": "00:00:00", "delta_resting_time": "00:00:00", "load_weight": {"arrival": 6000, "departure": 2000}, "load_volume": {"arrival": 12, "departure": 4}, "cumulative_fuel_demand": 0.05887137057836753, "esoc": {"arrival": 0, "departure": 0}, "hsoc": {"arrival": 0, "departure": 0}}, {"stop": 7, "time": {"arrival": "2024-01-01T11:51:04Z", "departure": "2024-01-01T12:21:04Z"}, "location": {"longitude": 9.769141699999999, "latitude": 48.0977335}, "shift_time": {"arrival": "05:51:04", "departure": "06:21:04"}, "driving_time_since_resting": {"arrival": "02:15:29", "departure": "00:00:00"}, "step_resting_number": 0, "step_resting_time": "00:00:00", "step_nighting_number": 0, "step_nighting_time": "00:00:00", "delta_driving_time": "00:44:02", "delta_waiting_time": "00:00:00", "delta_serving_time": "00:30:00", "delta_charging_time": "00:00:00", "delta_hydrogen_refueling_time": "00:00:00", "delta_resting_time": "00:00:00", "load_weight": {"arrival": 2000, "departure": 0}, "load_volume": {"arrival": 4, "departure": 0}, "cumulative_fuel_demand": 0.07096203809869783, "esoc": {"arrival": 0, "departure": 0}, "hsoc": {"arrival": 0, "departure": 0}}, {"stop": 8, "time": {"arrival": "2024-01-02T08:15:42Z", "departure": "2024-01-02T08:45:42Z"}, "location": {"longitude": 6.1131118, "latitude": 46.195304}, "shift_time": {"arrival": "00:30:42", "departure": "01:00:42"}, "driving_time_since_resting": {"arrival": "00:30:42", "departure": "00:30:42"}, "step_resting_number": 1, "step_resting_time": "00:45:00", "step_nighting_number": 1, "step_nighting_time": "13:00:00", "delta_driving_time": "06:09:38", "delta_waiting_time": "00:00:00", "delta_serving_time": "00:30:00", "delta_charging_time": "00:00:00", "delta_hydrogen_refueling_time": "00:00:00", "delta_resting_time": "00:00:00", "load_weight": {"arrival": 0, "departure": 8000}, "load_volume": {"arrival": 0, "departure": 5}, "cumulative_fuel_demand": 0.20891557859223772, "esoc": {"arrival": 0, "departure": 0}, "hsoc": {"arrival": 0, "departure": 0}}, {"stop": 9, "time": {"arrival": "2024-01-02T08:45:42Z", "departure": "2024-01-02T09:15:42Z"}, "location": {"longitude": 6.1131118, "latitude": 46.195304}, "shift_time": {"arrival": "01:00:42", "departure": "01:30:42"}, "driving_time_since_resting": {"arrival": "00:30:42", "departure": "00:30:42"}, "step_resting_number": 0, "step_resting_time": "00:00:00", "step_nighting_number": 0, "step_nighting_time": "00:00:00", "delta_driving_time": "00:00:00", "delta_waiting_time": "00:00:00", "delta_serving_time": "00:30:00", "delta_charging_time": "00:00:00", "delta_hydrogen_refueling_time": "00:00:00", "delta_resting_time": "00:00:00", "load_weight": {"arrival": 8000, "departure": 15000}, "load_volume": {"arrival": 5, "departure": 9}, "cumulative_fuel_demand": 0.20891557859223772, "esoc": {"arrival": 0, "departure": 0}, "hsoc": {"arrival": 0, "departure": 0}}, {"stop": 10, "time": {"arrival": "2024-01-02T11:29:00Z", "departure": "2024-01-02T11:59:00Z"}, "location": {"longitude": 4.7810773, "latitude": 45.757799000000006}, "shift_time": {"arrival": "03:44:00", "departure": "04:14:00"}, "driving_time_since_resting": {"arrival": "02:44:00", "departure": "02:44:00"}, "step_resting_number": 0, "step_resting_time": "00:00:00", "step_nighting_number": 0, "step_nighting_time": "00:00:00", "delta_driving_time": "02:13:17", "delta_waiting_time": "00:00:00", "delta_serving_time": "00:30:00", "delta_charging_time": "00:00:00", "delta_hydrogen_refueling_time": "00:00:00", "delta_resting_time": "00:00:00", "load_weight": {"arrival": 15000, "departure": 8000}, "load_volume": {"arrival": 9, "departure": 5}, "cumulative_fuel_demand": 0.3067085096678236, "esoc": {"arrival": 0, "departure": 0}, "hsoc": {"arrival": 0, "departure": 0}}, {"stop": 11, "time": {"arrival": "2024-01-03T08:59:41Z", "departure": "2024-01-03T09:29:41Z"}, "location": {"longitude": 2.2231975, "latitude": 41.4586498}, "shift_time": {"arrival": "00:59:41", "departure": "01:29:41"}, "driving_time_since_resting": {"arrival": "00:59:41", "departure": "00:59:41"}, "step_resting_number": 1, "step_resting_time": "00:45:00", "step_nighting_number": 1, "step_nighting_time": "13:00:00", "delta_driving_time": "07:15:41", "delta_waiting_time": "00:00:00", "delta_serving_time": "00:30:00", "delta_charging_time": "00:00:00", "delta_hydrogen_refueling_time": "00:00:00", "delta_resting_time": "00:00:00", "load_weight": {"arrival": 8000, "departure": 0}, "load_volume": {"arrival": 5, "departure": 0}, "cumulative_fuel_demand": 0.5710107046824344, "esoc": {"arrival": 0, "departure": 0}, "hsoc": {"arrival": 0, "departure": 0}}, {"stop": 12, "time": {"arrival": "2024-01-04T15:39:21Z", "departure": "2024-01-04T15:39:21Z"}, "location": {"longitude": 9.9713168, "latitude": 48.4375177}, "shift_time": {"arrival": "08:24:21", "departure": "08:24:21"}, "driving_time_since_resting": {"arrival": "03:09:21", "departure": "03:09:21"}, "step_resting_number": 2, "step_resting_time": "01:30:00", "step_nighting_number": 1, "step_nighting_time": "13:00:00", "delta_driving_time": "15:39:39", "delta_waiting_time": "00:00:00", "delta_serving_time": "00:00:00", "delta_charging_time": "00:00:00", "delta_hydrogen_refueling_time": "00:00:00", "delta_resting_time": "00:00:00", "load_weight": {"arrival": 0, "departure": 0}, "load_volume": {"arrival": 0, "departure": 0}, "cumulative_fuel_demand": 1.0522383503805828, "esoc": {"arrival": 0, "departure": 0}, "hsoc": {"arrival": 0, "departure": 0}}]}, {"vehicle_id": 104, "stops": [{"stop": 1, "time": {"arrival": "2024-01-01T06:00:00Z", "departure": "2024-01-01T06:00:00Z"}, "location": {"longitude": 9.9713168, "latitude": 48.4375177}, "shift_time": {"arrival": "00:00:00", "departure": "00:00:00"}, "driving_time_since_resting": {"arrival": "00:00:00", "departure": "00:00:00"}, "step_resting_number": 0, "step_resting_time": "00:00:00", "step_nighting_number": 0, "step_nighting_time": "00:00:00", "delta_driving_time": "00:00:00", "delta_waiting_time": "00:00:00", "delta_serving_time": "00:00:00", "delta_charging_time": "00:00:00", "delta_hydrogen_refueling_time": "00:00:00", "delta_resting_time": "00:00:00", "load_weight": {"arrival": 0, "departure": 0}, "load_volume": {"arrival": 0, "departure": 0}, "cumulative_fuel_demand": 0, "esoc": {"arrival": 0, "departure": 0}, "hsoc": {"arrival": 0, "departure": 0}}, {"stop": 2, "time": {"arrival": "2024-01-01T07:26:18Z", "departure": "2024-01-01T08:11:18Z"}, "location": {"longitude": 9.208228, "latitude": 48.8415561}, "shift_time": {"arrival": "01:26:18", "departure": "02:11:18"}, "driving_time_since_resting": {"arrival": "01:26:18", "departure": "00:00:00"}, "step_resting_number": 0, "step_resting_time": "00:00:00", "step_nighting_number": 0, "step_nighting_time": "00:00:00", "delta_driving_time": "01:26:18", "delta_waiting_time": "00:00:00", "delta_serving_time": "00:30:00", "delta_charging_time": "00:00:00", "delta_hydrogen_refueling_time": "00:00:00", "delta_resting_time": "00:15:00", "load_weight": {"arrival": 0, "departure": 4000}, "load_volume": {"arrival": 0, "departure": 22}, "cumulative_fuel_demand": 0.028574958978490064, "esoc": {"arrival": 0, "departure": 0}, "hsoc": {"arrival": 0, "departure": 0}}, {"stop": 3, "time": {"arrival": "2024-01-01T08:34:18Z", "departure": "2024-01-01T09:04:18Z"}, "location": {"longitude": 9.1500568, "latitude": 48.7310384}, "shift_time": {"arrival": "02:34:18", "departure": "03:04:18"}, "driving_time_since_resting": {"arrival": "00:22:59", "departure": "00:22:59"}, "step_resting_number": 0, "step_resting_time": "00:00:00", "step_nighting_number": 0, "step_nighting_time": "00:00:00", "delta_driving_time": "00:22:59", "delta_waiting_time": "00:00:00", "delta_serving_time": "00:30:00", "delta_charging_time": "00:00:00", "delta_hydrogen_refueling_time": "00:00:00", "delta_resting_time": "00:00:00", "load_weight": {"arrival": 4000, "departure": 7000}, "load_volume": {"arrival": 22, "departure": 25}, "cumulative_fuel_demand": 0.03891240155061698, "esoc": {"arrival": 0, "departure": 0}, "hsoc": {"arrival": 0, "departure": 0}}, {"stop": 4, "time": {"arrival": "2024-01-01T09:04:18Z", "departure": "2024-01-01T09:34:18Z"}, "location": {"longitude": 9.1500568, "latitude": 48.7310384}, "shift_time": {"arrival": "03:04:18", "departure": "03:34:18"}, "driving_time_since_resting": {"arrival": "00:22:59", "departure": "00:22:59"}, "step_resting_number": 0, "step_resting_time": "00:00:00", "step_nighting_number": 0, "step_nighting_time": "00:00:00", "delta_driving_time": "00:00:00", "delta_waiting_time": "00:00:00", "delta_serving_time": "00:30:00", "delta_charging_time": "00:00:00", "delta_hydrogen_refueling_time": "00:00:00", "delta_resting_time": "00:00:00", "load_weight": {"arrival": 7000, "departure": 9000}, "load_volume": {"arrival": 25, "departure": 29}, "cumulative_fuel_demand": 0.03891240155061698, "esoc": {"arrival": 0, "departure": 0}, "hsoc": {"arrival": 0, "departure": 0}}, {"stop": 5, "time": {"arrival": "2024-01-01T10:17:57Z", "departure": "2024-01-01T10:47:57Z"}, "location": {"longitude": 8.717663500000002, "latitude": 48.90808740000001}, "shift_time": {"arrival": "04:17:57", "departure": "04:47:57"}, "driving_time_since_resting": {"arrival": "01:06:38", "departure": "01:06:38"}, "step_resting_number": 0, "step_resting_time": "00:00:00", "step_nighting_number": 0, "step_nighting_time": "00:00:00", "delta_driving_time": "00:43:39", "delta_waiting_time": "00:00:00", "delta_serving_time": "00:30:00", "delta_charging_time": "00:00:00", "delta_hydrogen_refueling_time": "00:00:00", "delta_resting_time": "00:00:00", "load_weight": {"arrival": 9000, "departure": 6000}, "load_volume": {"arrival": 29, "departure": 26}, "cumulative_fuel_demand": 0.06048794393205814, "esoc": {"arrival": 0, "departure": 0}, "hsoc": {"arrival": 0, "departure": 0}}, {"stop": 6, "time": {"arrival": "2024-01-01T11:58:37Z", "departure": "2024-01-01T12:28:37Z"}, "location": {"longitude": 9.193477699999999, "latitude": 49.11912490000001}, "shift_time": {"arrival": "05:58:37", "departure": "06:28:37"}, "driving_time_since_resting": {"arrival": "02:17:19", "departure": "02:17:19"}, "step_resting_number": 0, "step_resting_time": "00:00:00", "step_nighting_number": 0, "step_nighting_time": "00:00:00", "delta_driving_time": "01:10:40", "delta_waiting_time": "00:00:00", "delta_serving_time": "00:30:00", "delta_charging_time": "00:00:00", "delta_hydrogen_refueling_time": "00:00:00", "delta_resting_time": "00:00:00", "load_weight": {"arrival": 6000, "departure": 4000}, "load_volume": {"arrival": 26, "departure": 22}, "cumulative_fuel_demand": 0.08056767415562752, "esoc": {"arrival": 0, "departure": 0}, "hsoc": {"arrival": 0, "departure": 0}}, {"stop": 7, "time": {"arrival": "2024-01-01T14:28:11Z", "departure": "2024-01-01T14:58:11Z"}, "location": {"longitude": 8.7027506, "latitude": 50.0320958}, "shift_time": {"arrival": "08:28:11", "departure": "08:58:11"}, "driving_time_since_resting": {"arrival": "04:16:52", "departure": "00:00:00"}, "step_resting_number": 0, "step_resting_time": "00:00:00", "step_nighting_number": 0, "step_nighting_time": "00:00:00", "delta_driving_time": "01:59:33", "delta_waiting_time": "00:00:00", "delta_serving_time": "00:30:00", "delta_charging_time": "00:00:00", "delta_hydrogen_refueling_time": "00:00:00", "delta_resting_time": "00:00:00", "load_weight": {"arrival": 4000, "departure": 10000}, "load_volume": {"arrival": 22, "departure": 29}, "cumulative_fuel_demand": 0.12984649654257338, "esoc": {"arrival": 0, "departure": 0}, "hsoc": {"arrival": 0, "departure": 0}}, {"stop": 8, "time": {"arrival": "2024-01-02T09:50:24Z", "departure": "2024-01-02T10:20:24Z"}, "location": {"longitude": 8.627499199999999, "latitude": 53.0290148}, "shift_time": {"arrival": "02:35:24", "departure": "03:05:24"}, "driving_time_since_resting": {"arrival": "02:35:24", "departure": "02:35:24"}, "step_resting_number": 0, "step_resting_time": "00:00:00", "step_nighting_number": 1, "step_nighting_time": "13:00:00", "delta_driving_time": "05:52:13", "delta_waiting_time": "00:00:00", "delta_serving_time": "00:30:00", "delta_charging_time": "00:00:00", "delta_hydrogen_refueling_time": "00:00:00", "delta_resting_time": "00:00:00", "load_weight": {"arrival": 10000, "departure": 4000}, "load_volume": {"arrival": 29, "departure": 22}, "cumulative_fuel_demand": 0.3144986252586276, "esoc": {"arrival": 0, "departure": 0}, "hsoc": {"arrival": 0, "departure": 0}}, {"stop": 9, "time": {"arrival": "2024-01-02T14:40:48Z", "departure": "2024-01-02T15:10:48Z"}, "location": {"longitude": 9.4796487, "latitude": 54.7917312}, "shift_time": {"arrival": "07:25:48", "departure": "07:55:48"}, "driving_time_since_resting": {"arrival": "00:00:00", "departure": "00:00:00"}, "step_resting_number": 1, "step_resting_time": "00:45:00", "step_nighting_number": 0, "step_nighting_time": "00:00:00", "delta_driving_time": "03:35:23", "delta_waiting_time": "00:00:00", "delta_serving_time": "00:30:00", "delta_charging_time": "00:00:00", "delta_hydrogen_refueling_time": "00:00:00", "delta_resting_time": "00:00:00", "load_weight": {"arrival": 4000, "departure": 0}, "load_volume": {"arrival": 22, "departure": 0}, "cumulative_fuel_demand": 0.40602653662572963, "esoc": {"arrival": 0, "departure": 0}, "hsoc": {"arrival": 0, "departure": 0}}, {"stop": 10, "time": {"arrival": "2024-01-03T15:43:43Z", "departure": "2024-01-03T15:43:43Z"}, "location": {"longitude": 9.9713168, "latitude": 48.4375177}, "shift_time": {"arrival": "08:43:43", "departure": "08:43:43"}, "driving_time_since_resting": {"arrival": "03:28:43", "departure": "03:28:43"}, "step_resting_number": 1, "step_resting_time": "00:45:00", "step_nighting_number": 1, "step_nighting_time": "13:00:00", "delta_driving_time": "10:47:55", "delta_waiting_time": "00:00:00", "delta_serving_time": "00:00:00", "delta_charging_time": "00:00:00", "delta_hydrogen_refueling_time": "00:00:00", "delta_resting_time": "00:00:00", "load_weight": {"arrival": 0, "departure": 0}, "load_volume": {"arrival": 0, "departure": 0}, "cumulative_fuel_demand": 0.6984907336616561, "esoc": {"arrival": 0, "departure": 0}, "hsoc": {"arrival": 0, "departure": 0}}]}, {"vehicle_id": 105, "stops": [{"stop": 1, "time": {"arrival": "2024-01-01T06:00:00Z", "departure": "2024-01-01T06:00:00Z"}, "location": {"longitude": 9.9713168, "latitude": 48.4375177}, "shift_time": {"arrival": "00:00:00", "departure": "00:00:00"}, "driving_time_since_resting": {"arrival": "00:00:00", "departure": "00:00:00"}, "step_resting_number": 0, "step_resting_time": "00:00:00", "step_nighting_number": 0, "step_nighting_time": "00:00:00", "delta_driving_time": "00:00:00", "delta_waiting_time": "00:00:00", "delta_serving_time": "00:00:00", "delta_charging_time": "00:00:00", "delta_hydrogen_refueling_time": "00:00:00", "delta_resting_time": "00:00:00", "load_weight": {"arrival": 0, "departure": 0}, "load_volume": {"arrival": 0, "departure": 0}, "cumulative_fuel_demand": 0, "esoc": {"arrival": 0, "departure": 0}, "hsoc": {"arrival": 0, "departure": 0}}, {"stop": 2, "time": {"arrival": "2024-01-01T07:08:12Z", "departure": "2024-01-01T07:53:12Z"}, "location": {"longitude": 9.1500568, "latitude": 48.7310384}, "shift_time": {"arrival": "01:08:12", "departure": "01:53:12"}, "driving_time_since_resting": {"arrival": "01:08:12", "departure": "00:00:00"}, "step_resting_number": 0, "step_resting_time": "00:00:00", "step_nighting_number": 0, "step_nighting_time": "00:00:00", "delta_driving_time": "01:08:12", "delta_waiting_time": "00:00:00", "delta_serving_time": "00:30:00", "delta_charging_time": "00:00:00", "delta_hydrogen_refueling_time": "00:00:00", "delta_resting_time": "00:15:00", "load_weight": {"arrival": 0, "departure": 4000}, "load_volume": {"arrival": 0, "departure": 9}, "cumulative_fuel_demand": 0.029456698255874884, "esoc": {"arrival": 0, "departure": 0}, "hsoc": {"arrival": 0, "departure": 0}}, {"stop": 3, "time": {"arrival": "2024-01-01T08:26:34Z", "departure": "2024-01-01T08:56:34Z"}, "location": {"longitude": 9.2179589, "latitude": 48.5128838}, "shift_time": {"arrival": "02:26:34", "departure": "02:56:34"}, "driving_time_since_resting": {"arrival": "00:33:22", "departure": "00:33:22"}, "step_resting_number": 0, "step_resting_time": "00:00:00", "step_nighting_number": 0, "step_nighting_time": "00:00:00", "delta_driving_time": "00:33:22", "delta_waiting_time": "00:00:00", "delta_serving_time": "00:30:00", "delta_charging_time": "00:00:00", "delta_hydrogen_refueling_time": "00:00:00", "delta_resting_time": "00:00:00", "load_weight": {"arrival": 4000, "departure": 0}, "load_volume": {"arrival": 9, "departure": 0}, "cumulative_fuel_demand": 0.04191287225713454, "esoc": {"arrival": 0, "departure": 0}, "hsoc": {"arrival": 0, "departure": 0}}, {"stop": 4, "time": {"arrival": "2024-01-02T06:24:37Z", "departure": "2024-01-02T06:54:37Z"}, "location": {"longitude": 5.763628199999999, "latitude": 45.2035134}, "shift_time": {"arrival": "00:24:37", "departure": "00:54:37"}, "driving_time_since_resting": {"arrival": "00:24:37", "departure": "00:24:37"}, "step_resting_number": 1, "step_resting_time": "00:45:00", "step_nighting_number": 1, "step_nighting_time": "13:00:00", "delta_driving_time": "07:43:03", "delta_waiting_time": "00:00:00", "delta_serving_time": "00:30:00", "delta_charging_time": "00:00:00", "delta_hydrogen_refueling_time": "00:00:00", "delta_resting_time": "00:00:00", "load_weight": {"arrival": 0, "departure": 12000}, "load_volume": {"arrival": 0, "departure": 7}, "cumulative_fuel_demand": 0.2406721831351089, "esoc": {"arrival": 0, "departure": 0}, "hsoc": {"arrival": 0, "departure": 0}}, {"stop": 5, "time": {"arrival": "2024-01-03T05:44:02Z", "departure": "2024-01-03T06:14:02Z"}, "location": {"longitude": 11.496661299999998, "latitude": 48.17846870000001}, "shift_time": {"arrival": "00:29:02", "departure": "00:59:02"}, "driving_time_since_resting": {"arrival": "00:29:02", "departure": "00:29:02"}, "step_resting_number": 1, "step_resting_time": "00:45:00", "step_nighting_number": 1, "step_nighting_time": "13:00:00", "delta_driving_time": "09:04:24", "delta_waiting_time": "00:00:00", "delta_serving_time": "00:30:00", "delta_charging_time": "00:00:00", "delta_hydrogen_refueling_time": "00:00:00", "delta_resting_time": "00:00:00", "load_weight": {"arrival": 12000, "departure": 0}, "load_volume": {"arrival": 7, "departure": 0}, "cumulative_fuel_demand": 0.5627714854481775, "esoc": {"arrival": 0, "departure": 0}, "hsoc": {"arrival": 0, "departure": 0}}, {"stop": 6, "time": {"arrival": "2024-01-03T07:58:40Z", "departure": "2024-01-03T07:58:40Z"}, "location": {"longitude": 9.9713168, "latitude": 48.4375177}, "shift_time": {"arrival": "02:43:40", "departure": "02:43:40"}, "driving_time_since_resting": {"arrival": "02:13:40", "departure": "02:13:40"}, "step_resting_number": 0, "step_resting_time": "00:00:00", "step_nighting_number": 0, "step_nighting_time": "00:00:00", "delta_driving_time": "01:44:38", "delta_waiting_time": "00:00:00", "delta_serving_time": "00:00:00", "delta_charging_time": "00:00:00", "delta_hydrogen_refueling_time": "00:00:00", "delta_resting_time": "00:00:00", "load_weight": {"arrival": 0, "departure": 0}, "load_volume": {"arrival": 0, "departure": 0}, "cumulative_fuel_demand": 0.6073049865038591, "esoc": {"arrival": 0, "departure": 0}, "hsoc": {"arrival": 0, "departure": 0}}]}]}
+{
+    "summary": {
+        "cost": 8654.54539197237,
+        "distance": 7991963.0,
+        "duration": 416270.40273037046,
+        "penalty": 0,
+        "penalty_customers": 0,
+        "penalty_time_windows": 0,
+        "penalty_work_overtime": 0,
+        "penalty_below_zero_soc": 0,
+        "vehicles_TCO_CAPEX": [
+            0,
+            132.99234187883025,
+            132.99234187883025,
+            132.99234187883025,
+            132.99234187883025
+        ],
+        "vehicles_TCO_OM": [
+            0,
+            246.30667085348742,
+            427.49601512599884,
+            300.050804183473,
+            238.58567926619813
+        ],
+        "vehicles_TCO_toll": [
+            0,
+            207.6964359629408,
+            360.48312626840976,
+            253.01581325741512,
+            201.1857619758211
+        ],
+        "vehicles_TCO_CO2": [
+            0,
+            106.51099280150807,
+            184.86314167610757,
+            129.75169910636674,
+            103.17218562862622
+        ],
+        "vehicles_TCO_energy": [
+            0,
+            533.2069548133084,
+            1052.7099366416305,
+            698.803779307013,
+            607.5771650343198
+        ],
+        "vehicles_TCO_wage": [
+            0,
+            487.7055710255455,
+            831.1946724312905,
+            633.6013140754219,
+            471.14143233677316
+        ],
+        "vehicles_TCO_insurance": [
+            0,
+            11.87921817134847,
+            11.87921817134847,
+            11.87921817134847,
+            11.87921817134847
+        ]
+    },
+    "tours": [
+        {
+            "vehicle_id": 102,
+            "stops": [
+                {
+                    "stop": 1,
+                    "time": {
+                        "arrival": "2024-01-01T06:00:00Z",
+                        "departure": "2024-01-01T06:00:00Z"
+                    },
+                    "location": {
+                        "longitude": 9.9713168,
+                        "latitude": 48.4375177
+                    },
+                    "shift_time": {
+                        "arrival": "00:00:00",
+                        "departure": "00:00:00"
+                    },
+                    "driving_time_since_resting": {
+                        "arrival": "00:00:00",
+                        "departure": "00:00:00"
+                    },
+                    "step_resting_number": 0,
+                    "step_resting_time": "00:00:00",
+                    "step_nighting_number": 0,
+                    "step_nighting_time": "00:00:00",
+                    "delta_driving_time": "00:00:00",
+                    "delta_waiting_time": "00:00:00",
+                    "delta_serving_time": "00:00:00",
+                    "delta_charging_time": "00:00:00",
+                    "delta_hydrogen_refueling_time": "00:00:00",
+                    "delta_resting_time": "00:00:00",
+                    "load_weight": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "load_volume": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "cumulative_fuel_demand": 0,
+                    "esoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "hsoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    }
+                },
+                {
+                    "stop": 2,
+                    "time": {
+                        "arrival": "2024-01-01T08:12:06Z",
+                        "departure": "2024-01-01T08:57:06Z"
+                    },
+                    "location": {
+                        "longitude": 11.443928200000002,
+                        "latitude": 48.77275900000001
+                    },
+                    "shift_time": {
+                        "arrival": "02:12:06",
+                        "departure": "02:57:06"
+                    },
+                    "driving_time_since_resting": {
+                        "arrival": "02:12:06",
+                        "departure": "00:00:00"
+                    },
+                    "step_resting_number": 0,
+                    "step_resting_time": "00:00:00",
+                    "step_nighting_number": 0,
+                    "step_nighting_time": "00:00:00",
+                    "delta_driving_time": "02:12:06",
+                    "delta_waiting_time": "00:00:00",
+                    "delta_serving_time": "00:30:00",
+                    "delta_charging_time": "00:00:00",
+                    "delta_hydrogen_refueling_time": "00:00:00",
+                    "delta_resting_time": "00:15:00",
+                    "load_weight": {
+                        "arrival": 0,
+                        "departure": 5000
+                    },
+                    "load_volume": {
+                        "arrival": 0,
+                        "departure": 3
+                    },
+                    "cumulative_fuel_demand": 0.04282592633579662,
+                    "esoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "hsoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    }
+                },
+                {
+                    "stop": 3,
+                    "time": {
+                        "arrival": "2024-01-01T13:18:23Z",
+                        "departure": "2024-01-01T13:48:23Z"
+                    },
+                    "location": {
+                        "longitude": 12.277003199999998,
+                        "latitude": 51.3237991
+                    },
+                    "shift_time": {
+                        "arrival": "07:18:23",
+                        "departure": "07:48:23"
+                    },
+                    "driving_time_since_resting": {
+                        "arrival": "04:21:17",
+                        "departure": "04:21:17"
+                    },
+                    "step_resting_number": 0,
+                    "step_resting_time": "00:00:00",
+                    "step_nighting_number": 0,
+                    "step_nighting_time": "00:00:00",
+                    "delta_driving_time": "04:21:17",
+                    "delta_waiting_time": "00:00:00",
+                    "delta_serving_time": "00:30:00",
+                    "delta_charging_time": "00:00:00",
+                    "delta_hydrogen_refueling_time": "00:00:00",
+                    "delta_resting_time": "00:00:00",
+                    "load_weight": {
+                        "arrival": 5000,
+                        "departure": 0
+                    },
+                    "load_volume": {
+                        "arrival": 3,
+                        "departure": 0
+                    },
+                    "cumulative_fuel_demand": 0.16712206861487675,
+                    "esoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "hsoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    }
+                },
+                {
+                    "stop": 4,
+                    "time": {
+                        "arrival": "2024-01-02T06:51:59Z",
+                        "departure": "2024-01-02T07:21:59Z"
+                    },
+                    "location": {
+                        "longitude": 9.8007603,
+                        "latitude": 52.40967060000001
+                    },
+                    "shift_time": {
+                        "arrival": "00:51:59",
+                        "departure": "01:21:59"
+                    },
+                    "driving_time_since_resting": {
+                        "arrival": "00:51:59",
+                        "departure": "00:51:59"
+                    },
+                    "step_resting_number": 1,
+                    "step_resting_time": "00:45:00",
+                    "step_nighting_number": 1,
+                    "step_nighting_time": "13:00:00",
+                    "delta_driving_time": "03:18:35",
+                    "delta_waiting_time": "00:00:00",
+                    "delta_serving_time": "00:30:00",
+                    "delta_charging_time": "00:00:00",
+                    "delta_hydrogen_refueling_time": "00:00:00",
+                    "delta_resting_time": "00:00:00",
+                    "load_weight": {
+                        "arrival": 0,
+                        "departure": 5000
+                    },
+                    "load_volume": {
+                        "arrival": 0,
+                        "departure": 3
+                    },
+                    "cumulative_fuel_demand": 0.24112213533648907,
+                    "esoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "hsoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    }
+                },
+                {
+                    "stop": 5,
+                    "time": {
+                        "arrival": "2024-01-02T10:50:09Z",
+                        "departure": "2024-01-02T11:20:09Z"
+                    },
+                    "location": {
+                        "longitude": 13.3122043,
+                        "latitude": 52.4232351
+                    },
+                    "shift_time": {
+                        "arrival": "04:50:09",
+                        "departure": "05:20:09"
+                    },
+                    "driving_time_since_resting": {
+                        "arrival": "04:20:09",
+                        "departure": "00:00:00"
+                    },
+                    "step_resting_number": 0,
+                    "step_resting_time": "00:00:00",
+                    "step_nighting_number": 0,
+                    "step_nighting_time": "00:00:00",
+                    "delta_driving_time": "03:28:10",
+                    "delta_waiting_time": "00:00:00",
+                    "delta_serving_time": "00:30:00",
+                    "delta_charging_time": "00:00:00",
+                    "delta_hydrogen_refueling_time": "00:00:00",
+                    "delta_resting_time": "00:00:00",
+                    "load_weight": {
+                        "arrival": 5000,
+                        "departure": 0
+                    },
+                    "load_volume": {
+                        "arrival": 3,
+                        "departure": 0
+                    },
+                    "cumulative_fuel_demand": 0.32690116841819794,
+                    "esoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "hsoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    }
+                },
+                {
+                    "stop": 6,
+                    "time": {
+                        "arrival": "2024-01-03T08:46:05Z",
+                        "departure": "2024-01-03T08:46:05Z"
+                    },
+                    "location": {
+                        "longitude": 9.9713168,
+                        "latitude": 48.4375177
+                    },
+                    "shift_time": {
+                        "arrival": "03:01:05",
+                        "departure": "03:01:05"
+                    },
+                    "driving_time_since_resting": {
+                        "arrival": "03:01:05",
+                        "departure": "03:01:05"
+                    },
+                    "step_resting_number": 1,
+                    "step_resting_time": "00:45:00",
+                    "step_nighting_number": 1,
+                    "step_nighting_time": "13:00:00",
+                    "delta_driving_time": "07:40:55",
+                    "delta_waiting_time": "00:00:00",
+                    "delta_serving_time": "00:00:00",
+                    "delta_charging_time": "00:00:00",
+                    "delta_hydrogen_refueling_time": "00:00:00",
+                    "delta_resting_time": "00:00:00",
+                    "load_weight": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "load_volume": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "cumulative_fuel_demand": 0.5329680921737219,
+                    "esoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "hsoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    }
+                }
+            ]
+        },
+        {
+            "vehicle_id": 103,
+            "stops": [
+                {
+                    "stop": 1,
+                    "time": {
+                        "arrival": "2024-01-01T06:00:00Z",
+                        "departure": "2024-01-01T06:00:00Z"
+                    },
+                    "location": {
+                        "longitude": 9.9713168,
+                        "latitude": 48.4375177
+                    },
+                    "shift_time": {
+                        "arrival": "00:00:00",
+                        "departure": "00:00:00"
+                    },
+                    "driving_time_since_resting": {
+                        "arrival": "00:00:00",
+                        "departure": "00:00:00"
+                    },
+                    "step_resting_number": 0,
+                    "step_resting_time": "00:00:00",
+                    "step_nighting_number": 0,
+                    "step_nighting_time": "00:00:00",
+                    "delta_driving_time": "00:00:00",
+                    "delta_waiting_time": "00:00:00",
+                    "delta_serving_time": "00:00:00",
+                    "delta_charging_time": "00:00:00",
+                    "delta_hydrogen_refueling_time": "00:00:00",
+                    "delta_resting_time": "00:00:00",
+                    "load_weight": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "load_volume": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "cumulative_fuel_demand": 0,
+                    "esoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "hsoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    }
+                },
+                {
+                    "stop": 2,
+                    "time": {
+                        "arrival": "2024-01-01T07:05:34Z",
+                        "departure": "2024-01-01T07:35:34Z"
+                    },
+                    "location": {
+                        "longitude": 10.8372976,
+                        "latitude": 48.3758085
+                    },
+                    "shift_time": {
+                        "arrival": "01:05:34",
+                        "departure": "01:35:34"
+                    },
+                    "driving_time_since_resting": {
+                        "arrival": "01:05:34",
+                        "departure": "01:05:34"
+                    },
+                    "step_resting_number": 0,
+                    "step_resting_time": "00:00:00",
+                    "step_nighting_number": 0,
+                    "step_nighting_time": "00:00:00",
+                    "delta_driving_time": "01:05:34",
+                    "delta_waiting_time": "00:00:00",
+                    "delta_serving_time": "00:30:00",
+                    "delta_charging_time": "00:00:00",
+                    "delta_hydrogen_refueling_time": "00:00:00",
+                    "delta_resting_time": "00:00:00",
+                    "load_weight": {
+                        "arrival": 0,
+                        "departure": 2000
+                    },
+                    "load_volume": {
+                        "arrival": 0,
+                        "departure": 4
+                    },
+                    "cumulative_fuel_demand": 0.025227123950460884,
+                    "esoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "hsoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    }
+                },
+                {
+                    "stop": 3,
+                    "time": {
+                        "arrival": "2024-01-01T07:35:34Z",
+                        "departure": "2024-01-01T08:05:34Z"
+                    },
+                    "location": {
+                        "longitude": 10.8372976,
+                        "latitude": 48.3758085
+                    },
+                    "shift_time": {
+                        "arrival": "01:35:34",
+                        "departure": "02:05:34"
+                    },
+                    "driving_time_since_resting": {
+                        "arrival": "01:05:34",
+                        "departure": "00:00:00"
+                    },
+                    "step_resting_number": 0,
+                    "step_resting_time": "00:00:00",
+                    "step_nighting_number": 0,
+                    "step_nighting_time": "00:00:00",
+                    "delta_driving_time": "00:00:00",
+                    "delta_waiting_time": "00:00:00",
+                    "delta_serving_time": "00:30:00",
+                    "delta_charging_time": "00:00:00",
+                    "delta_hydrogen_refueling_time": "00:00:00",
+                    "delta_resting_time": "00:00:00",
+                    "load_weight": {
+                        "arrival": 2000,
+                        "departure": 6000
+                    },
+                    "load_volume": {
+                        "arrival": 4,
+                        "departure": 12
+                    },
+                    "cumulative_fuel_demand": 0.025227123950460884,
+                    "esoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "hsoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    }
+                },
+                {
+                    "stop": 4,
+                    "time": {
+                        "arrival": "2024-01-01T08:05:34Z",
+                        "departure": "2024-01-01T08:35:34Z"
+                    },
+                    "location": {
+                        "longitude": 10.8372976,
+                        "latitude": 48.3758085
+                    },
+                    "shift_time": {
+                        "arrival": "02:05:34",
+                        "departure": "02:35:34"
+                    },
+                    "driving_time_since_resting": {
+                        "arrival": "00:00:00",
+                        "departure": "00:00:00"
+                    },
+                    "step_resting_number": 0,
+                    "step_resting_time": "00:00:00",
+                    "step_nighting_number": 0,
+                    "step_nighting_time": "00:00:00",
+                    "delta_driving_time": "00:00:00",
+                    "delta_waiting_time": "00:00:00",
+                    "delta_serving_time": "00:30:00",
+                    "delta_charging_time": "00:00:00",
+                    "delta_hydrogen_refueling_time": "00:00:00",
+                    "delta_resting_time": "00:00:00",
+                    "load_weight": {
+                        "arrival": 6000,
+                        "departure": 9000
+                    },
+                    "load_volume": {
+                        "arrival": 12,
+                        "departure": 19
+                    },
+                    "cumulative_fuel_demand": 0.025227123950460884,
+                    "esoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "hsoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    }
+                },
+                {
+                    "stop": 5,
+                    "time": {
+                        "arrival": "2024-01-01T09:23:51Z",
+                        "departure": "2024-01-01T09:53:51Z"
+                    },
+                    "location": {
+                        "longitude": 10.354045499999998,
+                        "latitude": 48.2544815
+                    },
+                    "shift_time": {
+                        "arrival": "03:23:51",
+                        "departure": "03:53:51"
+                    },
+                    "driving_time_since_resting": {
+                        "arrival": "00:48:16",
+                        "departure": "00:48:16"
+                    },
+                    "step_resting_number": 0,
+                    "step_resting_time": "00:00:00",
+                    "step_nighting_number": 0,
+                    "step_nighting_time": "00:00:00",
+                    "delta_driving_time": "00:48:16",
+                    "delta_waiting_time": "00:00:00",
+                    "delta_serving_time": "00:30:00",
+                    "delta_charging_time": "00:00:00",
+                    "delta_hydrogen_refueling_time": "00:00:00",
+                    "delta_resting_time": "00:00:00",
+                    "load_weight": {
+                        "arrival": 9000,
+                        "departure": 6000
+                    },
+                    "load_volume": {
+                        "arrival": 19,
+                        "departure": 12
+                    },
+                    "cumulative_fuel_demand": 0.042389500097259995,
+                    "esoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "hsoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    }
+                },
+                {
+                    "stop": 6,
+                    "time": {
+                        "arrival": "2024-01-01T10:37:02Z",
+                        "departure": "2024-01-01T11:07:02Z"
+                    },
+                    "location": {
+                        "longitude": 10.184406299999997,
+                        "latitude": 47.9929274
+                    },
+                    "shift_time": {
+                        "arrival": "04:37:02",
+                        "departure": "05:07:02"
+                    },
+                    "driving_time_since_resting": {
+                        "arrival": "01:31:27",
+                        "departure": "01:31:27"
+                    },
+                    "step_resting_number": 0,
+                    "step_resting_time": "00:00:00",
+                    "step_nighting_number": 0,
+                    "step_nighting_time": "00:00:00",
+                    "delta_driving_time": "00:43:11",
+                    "delta_waiting_time": "00:00:00",
+                    "delta_serving_time": "00:30:00",
+                    "delta_charging_time": "00:00:00",
+                    "delta_hydrogen_refueling_time": "00:00:00",
+                    "delta_resting_time": "00:00:00",
+                    "load_weight": {
+                        "arrival": 6000,
+                        "departure": 2000
+                    },
+                    "load_volume": {
+                        "arrival": 12,
+                        "departure": 4
+                    },
+                    "cumulative_fuel_demand": 0.05887137057836753,
+                    "esoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "hsoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    }
+                },
+                {
+                    "stop": 7,
+                    "time": {
+                        "arrival": "2024-01-01T11:51:04Z",
+                        "departure": "2024-01-01T12:21:04Z"
+                    },
+                    "location": {
+                        "longitude": 9.769141699999999,
+                        "latitude": 48.0977335
+                    },
+                    "shift_time": {
+                        "arrival": "05:51:04",
+                        "departure": "06:21:04"
+                    },
+                    "driving_time_since_resting": {
+                        "arrival": "02:15:29",
+                        "departure": "00:00:00"
+                    },
+                    "step_resting_number": 0,
+                    "step_resting_time": "00:00:00",
+                    "step_nighting_number": 0,
+                    "step_nighting_time": "00:00:00",
+                    "delta_driving_time": "00:44:02",
+                    "delta_waiting_time": "00:00:00",
+                    "delta_serving_time": "00:30:00",
+                    "delta_charging_time": "00:00:00",
+                    "delta_hydrogen_refueling_time": "00:00:00",
+                    "delta_resting_time": "00:00:00",
+                    "load_weight": {
+                        "arrival": 2000,
+                        "departure": 0
+                    },
+                    "load_volume": {
+                        "arrival": 4,
+                        "departure": 0
+                    },
+                    "cumulative_fuel_demand": 0.07096203809869783,
+                    "esoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "hsoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    }
+                },
+                {
+                    "stop": 8,
+                    "time": {
+                        "arrival": "2024-01-02T08:15:42Z",
+                        "departure": "2024-01-02T08:45:42Z"
+                    },
+                    "location": {
+                        "longitude": 6.1131118,
+                        "latitude": 46.195304
+                    },
+                    "shift_time": {
+                        "arrival": "00:30:42",
+                        "departure": "01:00:42"
+                    },
+                    "driving_time_since_resting": {
+                        "arrival": "00:30:42",
+                        "departure": "00:30:42"
+                    },
+                    "step_resting_number": 1,
+                    "step_resting_time": "00:45:00",
+                    "step_nighting_number": 1,
+                    "step_nighting_time": "13:00:00",
+                    "delta_driving_time": "06:09:38",
+                    "delta_waiting_time": "00:00:00",
+                    "delta_serving_time": "00:30:00",
+                    "delta_charging_time": "00:00:00",
+                    "delta_hydrogen_refueling_time": "00:00:00",
+                    "delta_resting_time": "00:00:00",
+                    "load_weight": {
+                        "arrival": 0,
+                        "departure": 8000
+                    },
+                    "load_volume": {
+                        "arrival": 0,
+                        "departure": 5
+                    },
+                    "cumulative_fuel_demand": 0.20891557859223772,
+                    "esoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "hsoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    }
+                },
+                {
+                    "stop": 9,
+                    "time": {
+                        "arrival": "2024-01-02T08:45:42Z",
+                        "departure": "2024-01-02T09:15:42Z"
+                    },
+                    "location": {
+                        "longitude": 6.1131118,
+                        "latitude": 46.195304
+                    },
+                    "shift_time": {
+                        "arrival": "01:00:42",
+                        "departure": "01:30:42"
+                    },
+                    "driving_time_since_resting": {
+                        "arrival": "00:30:42",
+                        "departure": "00:30:42"
+                    },
+                    "step_resting_number": 0,
+                    "step_resting_time": "00:00:00",
+                    "step_nighting_number": 0,
+                    "step_nighting_time": "00:00:00",
+                    "delta_driving_time": "00:00:00",
+                    "delta_waiting_time": "00:00:00",
+                    "delta_serving_time": "00:30:00",
+                    "delta_charging_time": "00:00:00",
+                    "delta_hydrogen_refueling_time": "00:00:00",
+                    "delta_resting_time": "00:00:00",
+                    "load_weight": {
+                        "arrival": 8000,
+                        "departure": 15000
+                    },
+                    "load_volume": {
+                        "arrival": 5,
+                        "departure": 9
+                    },
+                    "cumulative_fuel_demand": 0.20891557859223772,
+                    "esoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "hsoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    }
+                },
+                {
+                    "stop": 10,
+                    "time": {
+                        "arrival": "2024-01-02T11:29:00Z",
+                        "departure": "2024-01-02T11:59:00Z"
+                    },
+                    "location": {
+                        "longitude": 4.7810773,
+                        "latitude": 45.757799000000006
+                    },
+                    "shift_time": {
+                        "arrival": "03:44:00",
+                        "departure": "04:14:00"
+                    },
+                    "driving_time_since_resting": {
+                        "arrival": "02:44:00",
+                        "departure": "02:44:00"
+                    },
+                    "step_resting_number": 0,
+                    "step_resting_time": "00:00:00",
+                    "step_nighting_number": 0,
+                    "step_nighting_time": "00:00:00",
+                    "delta_driving_time": "02:13:17",
+                    "delta_waiting_time": "00:00:00",
+                    "delta_serving_time": "00:30:00",
+                    "delta_charging_time": "00:00:00",
+                    "delta_hydrogen_refueling_time": "00:00:00",
+                    "delta_resting_time": "00:00:00",
+                    "load_weight": {
+                        "arrival": 15000,
+                        "departure": 8000
+                    },
+                    "load_volume": {
+                        "arrival": 9,
+                        "departure": 5
+                    },
+                    "cumulative_fuel_demand": 0.3067085096678236,
+                    "esoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "hsoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    }
+                },
+                {
+                    "stop": 11,
+                    "time": {
+                        "arrival": "2024-01-03T08:59:41Z",
+                        "departure": "2024-01-03T09:29:41Z"
+                    },
+                    "location": {
+                        "longitude": 2.2231975,
+                        "latitude": 41.4586498
+                    },
+                    "shift_time": {
+                        "arrival": "00:59:41",
+                        "departure": "01:29:41"
+                    },
+                    "driving_time_since_resting": {
+                        "arrival": "00:59:41",
+                        "departure": "00:59:41"
+                    },
+                    "step_resting_number": 1,
+                    "step_resting_time": "00:45:00",
+                    "step_nighting_number": 1,
+                    "step_nighting_time": "13:00:00",
+                    "delta_driving_time": "07:15:41",
+                    "delta_waiting_time": "00:00:00",
+                    "delta_serving_time": "00:30:00",
+                    "delta_charging_time": "00:00:00",
+                    "delta_hydrogen_refueling_time": "00:00:00",
+                    "delta_resting_time": "00:00:00",
+                    "load_weight": {
+                        "arrival": 8000,
+                        "departure": 0
+                    },
+                    "load_volume": {
+                        "arrival": 5,
+                        "departure": 0
+                    },
+                    "cumulative_fuel_demand": 0.5710107046824344,
+                    "esoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "hsoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    }
+                },
+                {
+                    "stop": 12,
+                    "time": {
+                        "arrival": "2024-01-04T15:39:21Z",
+                        "departure": "2024-01-04T15:39:21Z"
+                    },
+                    "location": {
+                        "longitude": 9.9713168,
+                        "latitude": 48.4375177
+                    },
+                    "shift_time": {
+                        "arrival": "08:24:21",
+                        "departure": "08:24:21"
+                    },
+                    "driving_time_since_resting": {
+                        "arrival": "03:09:21",
+                        "departure": "03:09:21"
+                    },
+                    "step_resting_number": 2,
+                    "step_resting_time": "01:30:00",
+                    "step_nighting_number": 1,
+                    "step_nighting_time": "13:00:00",
+                    "delta_driving_time": "15:39:39",
+                    "delta_waiting_time": "00:00:00",
+                    "delta_serving_time": "00:00:00",
+                    "delta_charging_time": "00:00:00",
+                    "delta_hydrogen_refueling_time": "00:00:00",
+                    "delta_resting_time": "00:00:00",
+                    "load_weight": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "load_volume": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "cumulative_fuel_demand": 1.0522383503805828,
+                    "esoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "hsoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    }
+                }
+            ]
+        },
+        {
+            "vehicle_id": 104,
+            "stops": [
+                {
+                    "stop": 1,
+                    "time": {
+                        "arrival": "2024-01-01T06:00:00Z",
+                        "departure": "2024-01-01T06:00:00Z"
+                    },
+                    "location": {
+                        "longitude": 9.9713168,
+                        "latitude": 48.4375177
+                    },
+                    "shift_time": {
+                        "arrival": "00:00:00",
+                        "departure": "00:00:00"
+                    },
+                    "driving_time_since_resting": {
+                        "arrival": "00:00:00",
+                        "departure": "00:00:00"
+                    },
+                    "step_resting_number": 0,
+                    "step_resting_time": "00:00:00",
+                    "step_nighting_number": 0,
+                    "step_nighting_time": "00:00:00",
+                    "delta_driving_time": "00:00:00",
+                    "delta_waiting_time": "00:00:00",
+                    "delta_serving_time": "00:00:00",
+                    "delta_charging_time": "00:00:00",
+                    "delta_hydrogen_refueling_time": "00:00:00",
+                    "delta_resting_time": "00:00:00",
+                    "load_weight": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "load_volume": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "cumulative_fuel_demand": 0,
+                    "esoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "hsoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    }
+                },
+                {
+                    "stop": 2,
+                    "time": {
+                        "arrival": "2024-01-01T07:26:18Z",
+                        "departure": "2024-01-01T08:11:18Z"
+                    },
+                    "location": {
+                        "longitude": 9.208228,
+                        "latitude": 48.8415561
+                    },
+                    "shift_time": {
+                        "arrival": "01:26:18",
+                        "departure": "02:11:18"
+                    },
+                    "driving_time_since_resting": {
+                        "arrival": "01:26:18",
+                        "departure": "00:00:00"
+                    },
+                    "step_resting_number": 0,
+                    "step_resting_time": "00:00:00",
+                    "step_nighting_number": 0,
+                    "step_nighting_time": "00:00:00",
+                    "delta_driving_time": "01:26:18",
+                    "delta_waiting_time": "00:00:00",
+                    "delta_serving_time": "00:30:00",
+                    "delta_charging_time": "00:00:00",
+                    "delta_hydrogen_refueling_time": "00:00:00",
+                    "delta_resting_time": "00:15:00",
+                    "load_weight": {
+                        "arrival": 0,
+                        "departure": 4000
+                    },
+                    "load_volume": {
+                        "arrival": 0,
+                        "departure": 22
+                    },
+                    "cumulative_fuel_demand": 0.028574958978490064,
+                    "esoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "hsoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    }
+                },
+                {
+                    "stop": 3,
+                    "time": {
+                        "arrival": "2024-01-01T08:34:18Z",
+                        "departure": "2024-01-01T09:04:18Z"
+                    },
+                    "location": {
+                        "longitude": 9.1500568,
+                        "latitude": 48.7310384
+                    },
+                    "shift_time": {
+                        "arrival": "02:34:18",
+                        "departure": "03:04:18"
+                    },
+                    "driving_time_since_resting": {
+                        "arrival": "00:22:59",
+                        "departure": "00:22:59"
+                    },
+                    "step_resting_number": 0,
+                    "step_resting_time": "00:00:00",
+                    "step_nighting_number": 0,
+                    "step_nighting_time": "00:00:00",
+                    "delta_driving_time": "00:22:59",
+                    "delta_waiting_time": "00:00:00",
+                    "delta_serving_time": "00:30:00",
+                    "delta_charging_time": "00:00:00",
+                    "delta_hydrogen_refueling_time": "00:00:00",
+                    "delta_resting_time": "00:00:00",
+                    "load_weight": {
+                        "arrival": 4000,
+                        "departure": 7000
+                    },
+                    "load_volume": {
+                        "arrival": 22,
+                        "departure": 25
+                    },
+                    "cumulative_fuel_demand": 0.03891240155061698,
+                    "esoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "hsoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    }
+                },
+                {
+                    "stop": 4,
+                    "time": {
+                        "arrival": "2024-01-01T09:04:18Z",
+                        "departure": "2024-01-01T09:34:18Z"
+                    },
+                    "location": {
+                        "longitude": 9.1500568,
+                        "latitude": 48.7310384
+                    },
+                    "shift_time": {
+                        "arrival": "03:04:18",
+                        "departure": "03:34:18"
+                    },
+                    "driving_time_since_resting": {
+                        "arrival": "00:22:59",
+                        "departure": "00:22:59"
+                    },
+                    "step_resting_number": 0,
+                    "step_resting_time": "00:00:00",
+                    "step_nighting_number": 0,
+                    "step_nighting_time": "00:00:00",
+                    "delta_driving_time": "00:00:00",
+                    "delta_waiting_time": "00:00:00",
+                    "delta_serving_time": "00:30:00",
+                    "delta_charging_time": "00:00:00",
+                    "delta_hydrogen_refueling_time": "00:00:00",
+                    "delta_resting_time": "00:00:00",
+                    "load_weight": {
+                        "arrival": 7000,
+                        "departure": 9000
+                    },
+                    "load_volume": {
+                        "arrival": 25,
+                        "departure": 29
+                    },
+                    "cumulative_fuel_demand": 0.03891240155061698,
+                    "esoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "hsoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    }
+                },
+                {
+                    "stop": 5,
+                    "time": {
+                        "arrival": "2024-01-01T10:17:57Z",
+                        "departure": "2024-01-01T10:47:57Z"
+                    },
+                    "location": {
+                        "longitude": 8.717663500000002,
+                        "latitude": 48.90808740000001
+                    },
+                    "shift_time": {
+                        "arrival": "04:17:57",
+                        "departure": "04:47:57"
+                    },
+                    "driving_time_since_resting": {
+                        "arrival": "01:06:38",
+                        "departure": "01:06:38"
+                    },
+                    "step_resting_number": 0,
+                    "step_resting_time": "00:00:00",
+                    "step_nighting_number": 0,
+                    "step_nighting_time": "00:00:00",
+                    "delta_driving_time": "00:43:39",
+                    "delta_waiting_time": "00:00:00",
+                    "delta_serving_time": "00:30:00",
+                    "delta_charging_time": "00:00:00",
+                    "delta_hydrogen_refueling_time": "00:00:00",
+                    "delta_resting_time": "00:00:00",
+                    "load_weight": {
+                        "arrival": 9000,
+                        "departure": 6000
+                    },
+                    "load_volume": {
+                        "arrival": 29,
+                        "departure": 26
+                    },
+                    "cumulative_fuel_demand": 0.06048794393205814,
+                    "esoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "hsoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    }
+                },
+                {
+                    "stop": 6,
+                    "time": {
+                        "arrival": "2024-01-01T11:58:37Z",
+                        "departure": "2024-01-01T12:28:37Z"
+                    },
+                    "location": {
+                        "longitude": 9.193477699999999,
+                        "latitude": 49.11912490000001
+                    },
+                    "shift_time": {
+                        "arrival": "05:58:37",
+                        "departure": "06:28:37"
+                    },
+                    "driving_time_since_resting": {
+                        "arrival": "02:17:19",
+                        "departure": "02:17:19"
+                    },
+                    "step_resting_number": 0,
+                    "step_resting_time": "00:00:00",
+                    "step_nighting_number": 0,
+                    "step_nighting_time": "00:00:00",
+                    "delta_driving_time": "01:10:40",
+                    "delta_waiting_time": "00:00:00",
+                    "delta_serving_time": "00:30:00",
+                    "delta_charging_time": "00:00:00",
+                    "delta_hydrogen_refueling_time": "00:00:00",
+                    "delta_resting_time": "00:00:00",
+                    "load_weight": {
+                        "arrival": 6000,
+                        "departure": 4000
+                    },
+                    "load_volume": {
+                        "arrival": 26,
+                        "departure": 22
+                    },
+                    "cumulative_fuel_demand": 0.08056767415562752,
+                    "esoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "hsoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    }
+                },
+                {
+                    "stop": 7,
+                    "time": {
+                        "arrival": "2024-01-01T14:28:11Z",
+                        "departure": "2024-01-01T14:58:11Z"
+                    },
+                    "location": {
+                        "longitude": 8.7027506,
+                        "latitude": 50.0320958
+                    },
+                    "shift_time": {
+                        "arrival": "08:28:11",
+                        "departure": "08:58:11"
+                    },
+                    "driving_time_since_resting": {
+                        "arrival": "04:16:52",
+                        "departure": "00:00:00"
+                    },
+                    "step_resting_number": 0,
+                    "step_resting_time": "00:00:00",
+                    "step_nighting_number": 0,
+                    "step_nighting_time": "00:00:00",
+                    "delta_driving_time": "01:59:33",
+                    "delta_waiting_time": "00:00:00",
+                    "delta_serving_time": "00:30:00",
+                    "delta_charging_time": "00:00:00",
+                    "delta_hydrogen_refueling_time": "00:00:00",
+                    "delta_resting_time": "00:00:00",
+                    "load_weight": {
+                        "arrival": 4000,
+                        "departure": 10000
+                    },
+                    "load_volume": {
+                        "arrival": 22,
+                        "departure": 29
+                    },
+                    "cumulative_fuel_demand": 0.12984649654257338,
+                    "esoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "hsoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    }
+                },
+                {
+                    "stop": 8,
+                    "time": {
+                        "arrival": "2024-01-02T09:50:24Z",
+                        "departure": "2024-01-02T10:20:24Z"
+                    },
+                    "location": {
+                        "longitude": 8.627499199999999,
+                        "latitude": 53.0290148
+                    },
+                    "shift_time": {
+                        "arrival": "02:35:24",
+                        "departure": "03:05:24"
+                    },
+                    "driving_time_since_resting": {
+                        "arrival": "02:35:24",
+                        "departure": "02:35:24"
+                    },
+                    "step_resting_number": 0,
+                    "step_resting_time": "00:00:00",
+                    "step_nighting_number": 1,
+                    "step_nighting_time": "13:00:00",
+                    "delta_driving_time": "05:52:13",
+                    "delta_waiting_time": "00:00:00",
+                    "delta_serving_time": "00:30:00",
+                    "delta_charging_time": "00:00:00",
+                    "delta_hydrogen_refueling_time": "00:00:00",
+                    "delta_resting_time": "00:00:00",
+                    "load_weight": {
+                        "arrival": 10000,
+                        "departure": 4000
+                    },
+                    "load_volume": {
+                        "arrival": 29,
+                        "departure": 22
+                    },
+                    "cumulative_fuel_demand": 0.3144986252586276,
+                    "esoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "hsoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    }
+                },
+                {
+                    "stop": 9,
+                    "time": {
+                        "arrival": "2024-01-02T14:40:48Z",
+                        "departure": "2024-01-02T15:10:48Z"
+                    },
+                    "location": {
+                        "longitude": 9.4796487,
+                        "latitude": 54.7917312
+                    },
+                    "shift_time": {
+                        "arrival": "07:25:48",
+                        "departure": "07:55:48"
+                    },
+                    "driving_time_since_resting": {
+                        "arrival": "00:00:00",
+                        "departure": "00:00:00"
+                    },
+                    "step_resting_number": 1,
+                    "step_resting_time": "00:45:00",
+                    "step_nighting_number": 0,
+                    "step_nighting_time": "00:00:00",
+                    "delta_driving_time": "03:35:23",
+                    "delta_waiting_time": "00:00:00",
+                    "delta_serving_time": "00:30:00",
+                    "delta_charging_time": "00:00:00",
+                    "delta_hydrogen_refueling_time": "00:00:00",
+                    "delta_resting_time": "00:00:00",
+                    "load_weight": {
+                        "arrival": 4000,
+                        "departure": 0
+                    },
+                    "load_volume": {
+                        "arrival": 22,
+                        "departure": 0
+                    },
+                    "cumulative_fuel_demand": 0.40602653662572963,
+                    "esoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "hsoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    }
+                },
+                {
+                    "stop": 10,
+                    "time": {
+                        "arrival": "2024-01-03T15:43:43Z",
+                        "departure": "2024-01-03T15:43:43Z"
+                    },
+                    "location": {
+                        "longitude": 9.9713168,
+                        "latitude": 48.4375177
+                    },
+                    "shift_time": {
+                        "arrival": "08:43:43",
+                        "departure": "08:43:43"
+                    },
+                    "driving_time_since_resting": {
+                        "arrival": "03:28:43",
+                        "departure": "03:28:43"
+                    },
+                    "step_resting_number": 1,
+                    "step_resting_time": "00:45:00",
+                    "step_nighting_number": 1,
+                    "step_nighting_time": "13:00:00",
+                    "delta_driving_time": "10:47:55",
+                    "delta_waiting_time": "00:00:00",
+                    "delta_serving_time": "00:00:00",
+                    "delta_charging_time": "00:00:00",
+                    "delta_hydrogen_refueling_time": "00:00:00",
+                    "delta_resting_time": "00:00:00",
+                    "load_weight": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "load_volume": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "cumulative_fuel_demand": 0.6984907336616561,
+                    "esoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "hsoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    }
+                }
+            ]
+        },
+        {
+            "vehicle_id": 105,
+            "stops": [
+                {
+                    "stop": 1,
+                    "time": {
+                        "arrival": "2024-01-01T06:00:00Z",
+                        "departure": "2024-01-01T06:00:00Z"
+                    },
+                    "location": {
+                        "longitude": 9.9713168,
+                        "latitude": 48.4375177
+                    },
+                    "shift_time": {
+                        "arrival": "00:00:00",
+                        "departure": "00:00:00"
+                    },
+                    "driving_time_since_resting": {
+                        "arrival": "00:00:00",
+                        "departure": "00:00:00"
+                    },
+                    "step_resting_number": 0,
+                    "step_resting_time": "00:00:00",
+                    "step_nighting_number": 0,
+                    "step_nighting_time": "00:00:00",
+                    "delta_driving_time": "00:00:00",
+                    "delta_waiting_time": "00:00:00",
+                    "delta_serving_time": "00:00:00",
+                    "delta_charging_time": "00:00:00",
+                    "delta_hydrogen_refueling_time": "00:00:00",
+                    "delta_resting_time": "00:00:00",
+                    "load_weight": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "load_volume": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "cumulative_fuel_demand": 0,
+                    "esoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "hsoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    }
+                },
+                {
+                    "stop": 2,
+                    "time": {
+                        "arrival": "2024-01-01T07:08:12Z",
+                        "departure": "2024-01-01T07:53:12Z"
+                    },
+                    "location": {
+                        "longitude": 9.1500568,
+                        "latitude": 48.7310384
+                    },
+                    "shift_time": {
+                        "arrival": "01:08:12",
+                        "departure": "01:53:12"
+                    },
+                    "driving_time_since_resting": {
+                        "arrival": "01:08:12",
+                        "departure": "00:00:00"
+                    },
+                    "step_resting_number": 0,
+                    "step_resting_time": "00:00:00",
+                    "step_nighting_number": 0,
+                    "step_nighting_time": "00:00:00",
+                    "delta_driving_time": "01:08:12",
+                    "delta_waiting_time": "00:00:00",
+                    "delta_serving_time": "00:30:00",
+                    "delta_charging_time": "00:00:00",
+                    "delta_hydrogen_refueling_time": "00:00:00",
+                    "delta_resting_time": "00:15:00",
+                    "load_weight": {
+                        "arrival": 0,
+                        "departure": 4000
+                    },
+                    "load_volume": {
+                        "arrival": 0,
+                        "departure": 9
+                    },
+                    "cumulative_fuel_demand": 0.029456698255874884,
+                    "esoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "hsoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    }
+                },
+                {
+                    "stop": 3,
+                    "time": {
+                        "arrival": "2024-01-01T08:26:34Z",
+                        "departure": "2024-01-01T08:56:34Z"
+                    },
+                    "location": {
+                        "longitude": 9.2179589,
+                        "latitude": 48.5128838
+                    },
+                    "shift_time": {
+                        "arrival": "02:26:34",
+                        "departure": "02:56:34"
+                    },
+                    "driving_time_since_resting": {
+                        "arrival": "00:33:22",
+                        "departure": "00:33:22"
+                    },
+                    "step_resting_number": 0,
+                    "step_resting_time": "00:00:00",
+                    "step_nighting_number": 0,
+                    "step_nighting_time": "00:00:00",
+                    "delta_driving_time": "00:33:22",
+                    "delta_waiting_time": "00:00:00",
+                    "delta_serving_time": "00:30:00",
+                    "delta_charging_time": "00:00:00",
+                    "delta_hydrogen_refueling_time": "00:00:00",
+                    "delta_resting_time": "00:00:00",
+                    "load_weight": {
+                        "arrival": 4000,
+                        "departure": 0
+                    },
+                    "load_volume": {
+                        "arrival": 9,
+                        "departure": 0
+                    },
+                    "cumulative_fuel_demand": 0.04191287225713454,
+                    "esoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "hsoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    }
+                },
+                {
+                    "stop": 4,
+                    "time": {
+                        "arrival": "2024-01-02T06:24:37Z",
+                        "departure": "2024-01-02T06:54:37Z"
+                    },
+                    "location": {
+                        "longitude": 5.763628199999999,
+                        "latitude": 45.2035134
+                    },
+                    "shift_time": {
+                        "arrival": "00:24:37",
+                        "departure": "00:54:37"
+                    },
+                    "driving_time_since_resting": {
+                        "arrival": "00:24:37",
+                        "departure": "00:24:37"
+                    },
+                    "step_resting_number": 1,
+                    "step_resting_time": "00:45:00",
+                    "step_nighting_number": 1,
+                    "step_nighting_time": "13:00:00",
+                    "delta_driving_time": "07:43:03",
+                    "delta_waiting_time": "00:00:00",
+                    "delta_serving_time": "00:30:00",
+                    "delta_charging_time": "00:00:00",
+                    "delta_hydrogen_refueling_time": "00:00:00",
+                    "delta_resting_time": "00:00:00",
+                    "load_weight": {
+                        "arrival": 0,
+                        "departure": 12000
+                    },
+                    "load_volume": {
+                        "arrival": 0,
+                        "departure": 7
+                    },
+                    "cumulative_fuel_demand": 0.2406721831351089,
+                    "esoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "hsoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    }
+                },
+                {
+                    "stop": 5,
+                    "time": {
+                        "arrival": "2024-01-03T05:44:02Z",
+                        "departure": "2024-01-03T06:14:02Z"
+                    },
+                    "location": {
+                        "longitude": 11.496661299999998,
+                        "latitude": 48.17846870000001
+                    },
+                    "shift_time": {
+                        "arrival": "00:29:02",
+                        "departure": "00:59:02"
+                    },
+                    "driving_time_since_resting": {
+                        "arrival": "00:29:02",
+                        "departure": "00:29:02"
+                    },
+                    "step_resting_number": 1,
+                    "step_resting_time": "00:45:00",
+                    "step_nighting_number": 1,
+                    "step_nighting_time": "13:00:00",
+                    "delta_driving_time": "09:04:24",
+                    "delta_waiting_time": "00:00:00",
+                    "delta_serving_time": "00:30:00",
+                    "delta_charging_time": "00:00:00",
+                    "delta_hydrogen_refueling_time": "00:00:00",
+                    "delta_resting_time": "00:00:00",
+                    "load_weight": {
+                        "arrival": 12000,
+                        "departure": 0
+                    },
+                    "load_volume": {
+                        "arrival": 7,
+                        "departure": 0
+                    },
+                    "cumulative_fuel_demand": 0.5627714854481775,
+                    "esoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "hsoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    }
+                },
+                {
+                    "stop": 6,
+                    "time": {
+                        "arrival": "2024-01-03T07:58:40Z",
+                        "departure": "2024-01-03T07:58:40Z"
+                    },
+                    "location": {
+                        "longitude": 9.9713168,
+                        "latitude": 48.4375177
+                    },
+                    "shift_time": {
+                        "arrival": "02:43:40",
+                        "departure": "02:43:40"
+                    },
+                    "driving_time_since_resting": {
+                        "arrival": "02:13:40",
+                        "departure": "02:13:40"
+                    },
+                    "step_resting_number": 0,
+                    "step_resting_time": "00:00:00",
+                    "step_nighting_number": 0,
+                    "step_nighting_time": "00:00:00",
+                    "delta_driving_time": "01:44:38",
+                    "delta_waiting_time": "00:00:00",
+                    "delta_serving_time": "00:00:00",
+                    "delta_charging_time": "00:00:00",
+                    "delta_hydrogen_refueling_time": "00:00:00",
+                    "delta_resting_time": "00:00:00",
+                    "load_weight": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "load_volume": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "cumulative_fuel_demand": 0.6073049865038591,
+                    "esoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    },
+                    "hsoc": {
+                        "arrival": 0,
+                        "departure": 0
+                    }
+                }
+            ]
+        }
+    ]
+}
