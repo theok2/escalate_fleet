@@ -8,7 +8,7 @@ The ESCALATE project developed an advanced fleet operation optimization tool tha
 
 ## Repository Contents
 
-This repository contains input data and optimization results for two fictitious fleet scenarios:
+This repository contains input data and optimization results for two fictitious long haul fleet scenarios:
 
 ### Input Data
 - **`jobs.json`** - Customer delivery orders with pickup/delivery locations, time windows, and cargo specifications
@@ -17,8 +17,8 @@ This repository contains input data and optimization results for two fictitious 
 - **`vehicles_mixed_fleet.json`** - Fleet composition for mixed scenario (1 ICEV, 2 Pilot 4 BEV, 2 Pilot 2 FCEV)
 
 ### Output Data
-- **`optimized_ICEV_fleet_operation/solution.json`** - Optimized routes and operations for conventional fleet
-- **`optimized_mixed_fleet_operation/solution.json`** - Optimized routes and operations for mixed zero-emission fleet
+- **`optimized_ICEV_fleet_operation/solution.json`** - Optimized tours and operations for conventional fleet
+- **`optimized_mixed_fleet_operation/solution.json`** - Optimized tours and operations for mixed zero-emission fleet
 
 The fleet operation optimization model was applied on the same locations and jobs with a fleet consisting of 5 long haul ICEV and with a mixed fleet where 4 vehicles were swapped with 2 Pilot 4 and 2 Pilot 2 of the project. In the mixed fleet scenario, a charging station and a hydrogen refueling station is placed at the depot.
 
@@ -46,7 +46,7 @@ Vehicle specifications include:
 ### Solution Data
 Optimization results contain:
 - **Summary**: Total cost breakdown (TCO CAPEX, energy, wages, tolls, CO2, etc.)
-- **Tours**: Detailed vehicle routes with:
+- **Tours**: Detailed vehicle tours with:
   - Stop sequences and timing
   - Load management
   - Energy state tracking (fuel/battery/hydrogen)
@@ -56,7 +56,7 @@ Optimization results contain:
 
 ### Visualization
 Visualtzation files are added for a better understanding of the data.
-- **`fleet_operation_map.html`** - Top-down view of optimized of all vehicles on a map
+- **`fleet_operation_map.html`** - Top-down view of optimized tours of all vehicles on a map
 - **`vehicle_charts.html`** - Plots of energy (fuel, electric SoC, hydrogen SoC) and payloads (mass, volume) for all used vehicles along their trip. The vertical line at the end of eSoC and hSoC plots indicate charging and refueling at the depot, which can be done slow or fast before the next use of the vehicle.
 
 ## Key Metrics Comparison
