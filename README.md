@@ -82,9 +82,12 @@ The optimization tool integrates:
 
 ## Usage
 
-The usage of 
+The developed model can be used in two ways:
 
-This data demonstrates the practical implementation of zero emission vehicle integration in freight operations, showing:
+1. The model optimizes which and how many of the vehicles, which were given as input, are used for fleet operation. This use case is particularly suitable for selecting the vehicles that best suit the user's fleet operation when purchasing new vehicles.
+2. The model optimizes the fleet operation for a given fleet and for future orders (day ahead operation) of the user.
+
+This data demonstrates that the developed model is able practically implement zero emission vehicle integration in freight operations, showing:
 1. Feasibility of mixed fleet operations with current technology
 2. Trade-offs between operational costs and environmental benefits
 3. Infrastructure requirements for zero emission freight transport
