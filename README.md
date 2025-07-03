@@ -20,7 +20,7 @@ This repository contains input data and optimization results for two fictitious 
 - **`optimized_ICEV_fleet_operation/solution.json`** - Optimized tours and operations for conventional fleet
 - **`optimized_mixed_fleet_operation/solution.json`** - Optimized tours and operations for mixed zero-emission fleet
 
-The fleet operation optimization model was applied on the same locations and jobs with a fleet consisting of 5 long haul ICEV and with a mixed fleet where 4 vehicles were swapped with 2 Pilot 4 and 2 Pilot 2 of the project. In the mixed fleet scenario, a charging station and a hydrogen refueling station is placed at the depot.
+The fleet operation optimization model was given the same locations and jobs for two optimizations. One optimization was conducted for 5 long haul ICEV and one optimization was conducted where 4 vehicles were swapped with 2 Pilot 4 and 2 Pilot 2 of the project. In the mixed fleet scenario, a charging station and a hydrogen refueling station is placed at the depot. The optimization model optimizes the vehicles based on the given vehicles and also the tour for each vehicle. The model aims for the most efficient total cost of operation while fulfilling all jobs.
 
 ## Data Structure
 
@@ -51,14 +51,25 @@ Optimization results contain:
   - Load management
   - Energy state tracking (fuel/battery/hydrogen)
   - Charging/refueling stops
-  - Driver rest periods
+  - Detailed time tracking:
+    - **`step_resting_number`** - Number of en route rests between the stops at any rest area next to the road
+    - **`step_resting_time`** - Total duration of en route rests between the stops at any rest area next to the road
+    - **`step_nighting_number`** - Number of en route overnight rests between the stops at any rest area next to the road
+    - **`step_nighting_time`** - Total duration of en route overnight rests between the stops at any rest area next to the road
+    - **`delta_driving_time`** - Driving time between the stops
+    - **`delta_waiting_time`** - Time the driver waits after arriving at the stop and being serviced
+    - **`delta_serving_time`** - Time of being servied (loaded/unloaded) on site
+    - **`delta_charging_time`** - Duration of the charging process on site
+    - **`delta_hydrogen_refueling_time`** - Duration of the hydrogen refueilng process on site
+    - **`delta_resting_time`** - Additional rest time of the driver on site
+    
 
 The model calculates the Total Cost of Ownership (TCO) for the time horizon of the optimization.
 
 ### Visualization
 Visualtzation files are added for a better understanding of the data.
-- **`fleet_operation_map.html`** - Top-down view of optimized tours of all vehicles on a map
-- **`vehicle_charts.html`** - Plots of energy (fuel, electric SoC, hydrogen SoC) and payloads (mass, volume) for all used vehicles along their trip. The vertical line at the end of eSoC and hSoC plots indicate charging and refueling at the depot, which can be done slow or fast before the next use of the vehicle.
+- **`fleet_operation_map.html`** - Top-down view of optimized tours of all vehicles on a map. For a clearer overview, the vehicle tours are not only visualized with the roads actually driven, but also with straight connected lines between the stops. The purpe dashed lines indicate the pickup and delivery locations of the jobs.
+- **`vehicle_charts.html`** - Plots of energy (fuel, electric SoC, hydrogen SoC) and payloads (mass, volume) for all used vehicles along their trip. The vertical line at the end of eSoC and hSoC plots indicate charging and refueling at the depot, which can be done slow or fast before the next use of the vehicle. Since this duration is unknown, it's simplified and visualized as instant charged/refueled.
 
 ## Technical Implementation
 
@@ -70,6 +81,8 @@ The optimization tool integrates:
 - **Cost Optimization**: Total Cost of Ownership (TCO) minimization
 
 ## Usage
+
+The usage of 
 
 This data demonstrates the practical implementation of zero emission vehicle integration in freight operations, showing:
 1. Feasibility of mixed fleet operations with current technology
