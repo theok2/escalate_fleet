@@ -39,7 +39,7 @@ Infrastructure points including:
 
 ### Vehicles
 Vehicle specifications include:
-- **ICEV 40t**: Conventional diesel trucks (30.7L/100km fuel consumption)
+- **ICEV 40t**: Conventional diesel trucks
 - **ESCALATE Pilot 4**: Battery electric vehicles (1,100 kWh capacity, 400kW charging)
 - **ESCALATE Pilot 2**: Fuel cell electric vehicles (68kg H2 capacity, 30.5 kWh buffer battery)
 
