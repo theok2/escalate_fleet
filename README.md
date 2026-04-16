@@ -124,14 +124,14 @@ theo.koch@ika.rwth-aachen.de
 AI4Sec  
 omer@ai4sec.eu  
 
-Ali Atalay
-AI4Sec
-ali.atalay@ai4sec.eu
+Ali Atalay  
+AI4Sec  
+ali.atalay@ai4sec.eu  
 
-Mikaela Ranta
-VTT Technical Research Centre of Finland
-mikaela.ranta@vtt.fi
+Mikaela Ranta  
+VTT Technical Research Centre of Finland  
+mikaela.ranta@vtt.fi  
 
-Sreejesh Nair
-Kempower
-sreejesh.nair@kempower.com
+Sreejesh Nair  
+Kempower  
+sreejesh.nair@kempower.com  
