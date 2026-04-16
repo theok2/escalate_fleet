@@ -120,9 +120,9 @@ theo.koch@ika.rwth-aachen.de
 
 ## Contributors 
 
-Ömer Öztin
-AI4Sec
-omer@ai4sec.eu
+Ömer Öztin  
+AI4Sec  
+omer@ai4sec.eu  
 
 Ali Atalay
 AI4Sec
