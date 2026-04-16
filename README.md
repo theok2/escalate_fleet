@@ -117,3 +117,21 @@ Theo Koch
 Intitute for Automotive Engineering Aachen (ika)  
 RWTH Aachen University  
 theo.koch@ika.rwth-aachen.de 
+
+## Contributors 
+
+Ömer Öztin
+AI4Sec
+omer@ai4sec.eu
+
+Ali Atalay
+AI4Sec
+ali.atalay@ai4sec.eu
+
+Mikaela Ranta
+VTT Technical Research Centre of Finland
+mikaela.ranta@vtt.fi
+
+Sreejesh Nair
+Kempower
+sreejesh.nair@kempower.com
